@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Squad Sim Demo</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="cards.css">
+<link rel="stylesheet" href="plan.css">
+</head>
+<body>
+<header>
+  <h1>Squad Sim <small>Demo</small></h1>
+  <nav>
+    <button data-tab="atk-squad" class="active">ATK squad</button>
+    <button data-tab="def-squad">DEF squad</button>
+    <button data-tab="match">Match</button>
+    <button data-tab="ladder">Ladder</button>
+    <button data-tab="sim">Simulator</button>
+  </nav>
+</header>
+
+<main>
+<section id="atk-squad">
+  <div class="bar">
+    <label>Opponent quality (avg stat) <input id="quality" type="number" value="58" min="20" max="90"></label>
+    <button id="new-opponent">New random opponent</button>
+    <button id="mirror-opponent">Mirror opponent</button>
+  </div>
+  <div id="atk-view"></div>
+</section>
+
+<section id="def-squad" hidden>
+  <div id="def-view"></div>
+</section>
+
+<section id="match" hidden>
+  <div class="bar">
+    <label>Map <select id="map"><option value="">Random</option></select></label>
+    <button id="new-match" class="primary">New match</button>
+  </div>
+  <div id="match-view"></div>
+</section>
+
+<section id="ladder" hidden>
+  <div id="ladder-view"></div>
+</section>
+
+<section id="sim" hidden>
+  <div class="bar">
+    <label>Matches <input id="sim-matches" type="number" value="500" min="1" max="5000"></label>
+    <label>Opponent quality <input id="sim-quality" type="number" value="58" min="20" max="90"></label>
+    <label>Map <select id="sim-map"><option value="">Random</option></select></label>
+    <label>ATK plan <select id="sim-atk"><option value="">AI pool</option></select></label>
+    <label>DEF setup <select id="sim-def"><option value="">AI pool</option></select></label>
+    <label><input id="sim-mirror" type="checkbox"> Mirror (your squad on both sides)</label>
+    <button id="run-sim" class="primary">Run</button>
+  </div>
+  <p class="hint">Uses your current squad and playstyles. Each side draws its plan or setup from its archetype's AI pool (all four pools for squads without an archetype) unless a template is picked; a picked template applies to both squads.</p>
+  <div id="sim-view"></div>
+</section>
+</main>
+
+<script src="catalog.js"></script>
+<script src="data.js"></script>
+<script src="maps.js"></script>
+<script src="engine.js"></script>
+<script src="visuals.js"></script>
+<script src="plan.js"></script>
+<script src="cards.js"></script>
+<script src="squad.js"></script>
+<script src="narrate.js"></script>
+<script src="playback.js"></script>
+<script src="ladder.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>

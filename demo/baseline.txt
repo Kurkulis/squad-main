@@ -1,0 +1,51 @@
+
+Mirror (MVP roster both sides): 2000 matches, 11640 rounds
+  your match win 49.5% | your round win 49.6% | ATK round win 46.4% | avg steps 7.28 | first kill -> round win 71.0%
+  ATK · Detonation 14.7% | ATK · Elimination 31.6% | DEF · Defused 7.9% | DEF · Elimination 39.0% | DEF · Time out 6.8%
+
+vs random quality 44: 1000 matches, 4019 rounds
+  your match win 100.0% | your round win 99.5% | ATK round win 50.2% | avg steps 5.36 | first kill -> round win 94.5%
+  ATK · Detonation 4.0% | ATK · Elimination 46.2% | DEF · Defused 0.2% | DEF · Elimination 49.5% | DEF · Time out 0.1%
+
+vs random quality 52: 1000 matches, 4546 rounds
+  your match win 99.4% | your round win 87.9% | ATK round win 52.9% | avg steps 6.65 | first kill -> round win 79.4%
+  ATK · Detonation 12.3% | ATK · Elimination 40.7% | DEF · Defused 3.2% | DEF · Elimination 40.9% | DEF · Time out 2.9%
+
+vs random quality 58: 1000 matches, 5836 rounds
+  your match win 57.3% | your round win 53.2% | ATK round win 50.0% | avg steps 7.25 | first kill -> round win 72.1%
+  ATK · Detonation 15.3% | ATK · Elimination 34.7% | DEF · Defused 6.3% | DEF · Elimination 36.9% | DEF · Time out 6.8%
+
+vs random quality 64: 1000 matches, 4713 rounds
+  your match win 1.3% | your round win 15.8% | ATK round win 46.0% | avg steps 6.72 | first kill -> round win 77.1%
+  ATK · Detonation 12.2% | ATK · Elimination 33.8% | DEF · Defused 4.6% | DEF · Elimination 45.4% | DEF · Time out 4.0%
+
+vs random quality 72: 1000 matches, 4077 rounds
+  your match win 0.0% | your round win 1.9% | ATK round win 48.1% | avg steps 5.47 | first kill -> round win 91.8%
+  ATK · Detonation 4.6% | ATK · Elimination 43.5% | DEF · Defused 1.6% | DEF · Elimination 50.2% | DEF · Time out 0.2%
+
+ATK round win by route (mirror):
+  Crosspoint Mall · Main atrium entrance: 43.3% of 802
+  Crosspoint Mall · Side shop access: 56.0% of 822
+  Crosspoint Mall · Staff corridor breach: 44.6% of 763
+  Ironfield Factory · Catwalk access ladder: 37.9% of 691
+  Ironfield Factory · Factory floor side breach: 48.0% of 691
+  Ironfield Factory · Main loading dock: 41.1% of 701
+  Meridian Office Tower · Fire escape stairs: 34.8% of 779
+  Meridian Office Tower · Main lobby: 55.9% of 780
+  Meridian Office Tower · Ventilation shaft breach: 48.4% of 857
+  St. Mora Hospital · External ward window: 35.4% of 816
+  St. Mora Hospital · Main reception: 53.9% of 791
+  St. Mora Hospital · Service tunnel entrance: 54.0% of 797
+  Vantage Secondary School · Gym side door: 55.8% of 798
+  Vantage Secondary School · Main entrance: 53.4% of 766
+  Vantage Secondary School · Roof hatch above cafeteria: 31.4% of 786
+
+Mirror vs balance targets:
+  ATK round win 46.4% (target 45.0%-55.0%)
+  first kill -> round win 71.0% (target 65.0%-75.0%)
+  avg steps 7.28 (target 6.50-8.00)
+  elimination endings 70.6% (target 60.0%-75.0%)
+  bomb endings 22.6% (target 15.0%-35.0%)
+  time out endings 6.8% (target 5.0%-15.0%)
+
+all checks passed

@@ -1,0 +1,469 @@
+.card-toggle {
+    margin: var(--s2) 0;
+}
+
+.card-toggle button {
+    height: 28px;
+    font-size: 12px;
+}
+
+.card-toggle button[aria-pressed=true] {
+    border-color: var(--ink);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--s3);
+    margin: var(--s3) 0;
+}
+
+@media (max-width: 1100px) {
+    .cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--s2);
+    }
+}
+
+@media (max-width: 360px) {
+    .cards {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s2);
+    min-width: 0;
+    padding: var(--s3);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--border-strong);
+    border-radius: var(--radius);
+    background: var(--surface);
+    font-size: 13px;
+}
+
+.ATK-card {
+    border-top-color: var(--atk);
+}
+
+.DEF-card {
+    border-top-color: var(--def);
+}
+
+.card-head {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-name {
+    overflow: hidden;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-role,
+.card-kit span,
+.card-style > span,
+.card-match dt {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.card-kit {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.card-kit li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-kit span {
+    display: inline-block;
+    min-width: 4.5em;
+}
+
+.card-kit .card-tier {
+    display: inline;
+    min-width: 0;
+    padding: 0 var(--s1);
+    border: 1px solid var(--border-strong);
+    border-radius: 4px;
+    color: var(--text);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.card-style {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s1) var(--s2);
+}
+
+.card-style select {
+    flex: 1 1 8em;
+    min-width: 0;
+    height: 28px;
+    padding: 0 var(--s1);
+}
+
+.card-stats {
+    display: grid;
+    gap: 2px;
+}
+
+.card-stat {
+    display: grid;
+    grid-template-columns: 1.8em 1fr 3.6em;
+    align-items: center;
+    gap: var(--s2);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+}
+
+.card-stat-key {
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
+.card-track {
+    position: relative;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--hover);
+}
+
+.card-fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    border-radius: 3px;
+    background: var(--ink);
+    opacity: 0.7;
+}
+
+.ATK-card .card-fill {
+    background: var(--atk);
+}
+
+.DEF-card .card-fill {
+    background: var(--def);
+}
+
+.card-base {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    width: 2px;
+    margin-left: -1px;
+    background: var(--text);
+}
+
+.card-stat-val {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.card-match {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--s1) var(--s2);
+    margin: 0;
+    padding-top: var(--s2);
+    border-top: 1px solid var(--border);
+}
+
+.card-match div {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--s1);
+}
+
+.card-match dd {
+    margin: 0;
+    font-variant-numeric: tabular-nums;
+}
+
+.card-dead {
+    opacity: 0.5;
+    filter: grayscale(1);
+}
+
+.card-dead .card-name {
+    text-decoration: line-through;
+}
+
+.card-weapon small {
+    flex-basis: 100%;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.card-advice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px var(--s2);
+    margin: 0;
+    padding: 0;
+    color: var(--muted);
+    font-size: 11px;
+    list-style: none;
+}
+
+.card-advice b {
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+}
+
+.card-advice .best,
+.card-advice .best b {
+    color: var(--win);
+}
+
+.stat-guide-panel {
+    margin: var(--s3) 0;
+}
+
+.stat-guide-panel summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.stat-guide td {
+    vertical-align: top;
+}
+
+.stat-guide td:first-child {
+    min-width: 16em;
+}
+
+.guide-bar {
+    display: block;
+    height: 6px;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    background: var(--hover);
+}
+
+.guide-bar span {
+    display: block;
+    height: 100%;
+    border-radius: 3px;
+    background: var(--ink);
+    opacity: 0.7;
+}
+
+.guide-unused span {
+    opacity: 0.25;
+}
+
+:root {
+    --stat-down-1: #a86b00;
+    --stat-down-2: #c62828;
+    --stat-up-1: #3d8b4a;
+    --stat-up-2: #0f6a2b;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --stat-down-1: #e3b341;
+        --stat-down-2: #ff6b61;
+        --stat-up-1: #9be3a9;
+        --stat-up-2: #3fb950;
+    }
+}
+
+.cards-large {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--s4);
+}
+
+@media (max-width: 1100px) {
+    .cards-large {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .cards-large {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.card-top {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--s3);
+    min-width: 0;
+}
+
+.card-id {
+    flex: 1;
+    min-width: 0;
+}
+
+.card-portrait {
+    flex: none;
+    width: 56px;
+    height: 56px;
+    border: 2px solid var(--border-strong);
+    border-radius: var(--radius);
+    background: var(--hover);
+    object-fit: cover;
+}
+
+.card-large .card-portrait {
+    width: 120px;
+    height: 120px;
+    object-position: top;
+}
+
+@media (max-width: 760px) {
+    .card-large .card-portrait {
+        width: 96px;
+        height: 96px;
+    }
+}
+
+.ATK-card .card-portrait {
+    border-color: var(--atk);
+}
+
+.DEF-card .card-portrait {
+    border-color: var(--def);
+}
+
+.card-gun-img {
+    flex: 0 0 100%;
+    height: 28px;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.card-large .card-gun-img {
+    height: 36px;
+}
+
+.card-sits {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.card-sits b {
+    color: var(--text);
+}
+
+.card-large .card-stat {
+    grid-template-columns: 8.5em 1fr 4.2em;
+}
+
+.card-stat {
+    position: relative;
+    border-radius: 4px;
+    cursor: help;
+}
+
+.card-stat:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 1px;
+}
+
+.card-stat-val small {
+    color: var(--muted);
+}
+
+.stat-down-1 {
+    --delta: var(--stat-down-1);
+}
+
+.stat-down-2 {
+    --delta: var(--stat-down-2);
+}
+
+.stat-up-1 {
+    --delta: var(--stat-up-1);
+}
+
+.stat-up-2 {
+    --delta: var(--stat-up-2);
+}
+
+:is(.stat-down-1, .stat-down-2, .stat-up-1, .stat-up-2) .card-fill {
+    background: var(--delta);
+    opacity: 1;
+}
+
+:is(.stat-down-1, .stat-down-2, .stat-up-1, .stat-up-2) .card-stat-val b {
+    color: var(--delta);
+}
+
+.stat-tip {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 4px);
+    right: 0;
+    left: 0;
+    gap: 2px;
+    padding: var(--s2) var(--s3);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: 0 6px 20px rgb(0 0 0 / 18%);
+    color: var(--text);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.4;
+    cursor: auto;
+}
+
+.card-stat:hover .stat-tip,
+.card-stat:focus .stat-tip {
+    display: grid;
+}
+
+.stat-tip ul {
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+.stat-tip-hint {
+    color: var(--win);
+    font-weight: 600;
+}
+
+.squad-summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s1) var(--s2);
+    margin: var(--s2) 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.squad-summary b {
+    color: var(--text);
+}
+
+.squad-opponent {
+    margin: var(--s4) 0;
+}
+
+.squad-opponent > summary {
+    cursor: pointer;
+    font-weight: 600;
+}
