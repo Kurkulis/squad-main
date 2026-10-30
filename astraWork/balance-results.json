@@ -1,0 +1,4147 @@
+{
+  "formatVersion": 1,
+  "rules": "Existing V4 engine and roster; no combat constants changed",
+  "settings": {
+    "roundsPerSeedAndMode": 2000,
+    "seeds": [
+      193751,
+      9518427
+    ],
+    "developmentSeedsExcluded": [
+      274901,
+      812042,
+      4420913,
+      732419
+    ],
+    "templateRounds": 200,
+    "spawnRounds": 400,
+    "matches": 200,
+    "primaryAbilities": "none",
+    "matchAbilities": "one available ability per side per round"
+  },
+  "sources": {
+    "maps.js": "1bef75db7657bfece51ad20677d3231a5ec9741a7dc9b8a20d24779de5f99a37",
+    "balance-core.js": "65dd607f7123a2e977b6b78b94c8264f9fd2829521c5136a918f660ae8e7b7a7",
+    "balance.js": "b58473029a197ad6b4f11af91d4a1f5228e4e498cf0e76a089ddb0e661d56890",
+    "counterplay.js": "e333eaa04b0ae56ce9b44a30b69f4eef27e9288b9e79587accf1e364db74fe83",
+    "../demo/engine.js": "8fb802fdbccefba2294b48e2d4e9c3bc0fa89dc491e2876ec935234ff5cc4f6b",
+    "../demo/data.js": "9613a09fd2dfcbc2daf8a7725bf066647b021ab153793b15fc25169995df6d6b",
+    "../demo/catalog.js": "162cf9a11fe42586f70520be459ac8a2d7cdce25964dc42f9d1c141358bc0b6e"
+  },
+  "maps": {
+    "Aster Research Courtyard": {
+      "kind": "competitive",
+      "shape": "U-shaped courtyard",
+      "geometry": {
+        "zones": 16,
+        "doors": 25,
+        "independentApproaches": 3,
+        "shortestRoutes": {
+          "west-yard": 4,
+          "east-yard": 4
+        },
+        "objectiveEntrances": 3
+      },
+      "pool": {
+        "rounds": 4000,
+        "atkWins": 1964,
+        "timeouts": 413,
+        "steps": 36525,
+        "plants": 2490,
+        "reasons": {
+          "DEF: Defused": 530,
+          "DEF: Time out": 413,
+          "ATK: Detonation": 1405,
+          "DEF: Elimination": 1093,
+          "ATK: Elimination": 559
+        },
+        "attackPolicies": {
+          "Utility-heavy": {
+            "rounds": 990,
+            "atkWins": 575
+          },
+          "Tactical": {
+            "rounds": 957,
+            "atkWins": 364
+          },
+          "Rush": {
+            "rounds": 1028,
+            "atkWins": 456
+          },
+          "Balanced": {
+            "rounds": 1025,
+            "atkWins": 569
+          }
+        },
+        "defensePolicies": {
+          "Tactical": {
+            "rounds": 989,
+            "atkWins": 488
+          },
+          "Utility-heavy": {
+            "rounds": 1028,
+            "atkWins": 492
+          },
+          "Rush": {
+            "rounds": 1007,
+            "atkWins": 468
+          },
+          "Balanced": {
+            "rounds": 976,
+            "atkWins": 516
+          }
+        },
+        "atkRate": 0.491,
+        "defRate": 0.509,
+        "atkWilson95": [
+          0.4755237009541666,
+          0.506493569025048
+        ],
+        "timeoutRate": 0.10325,
+        "averageSteps": 9.13125,
+        "batches": [
+          {
+            "seed": 193751,
+            "rounds": 2000,
+            "atkWins": 969,
+            "timeouts": 197,
+            "steps": 18264,
+            "plants": 1237,
+            "reasons": {
+              "DEF: Defused": 269,
+              "DEF: Time out": 197,
+              "ATK: Detonation": 690,
+              "DEF: Elimination": 565,
+              "ATK: Elimination": 279
+            },
+            "attackPolicies": {
+              "Utility-heavy": {
+                "rounds": 513,
+                "atkWins": 294
+              },
+              "Tactical": {
+                "rounds": 470,
+                "atkWins": 173
+              },
+              "Rush": {
+                "rounds": 515,
+                "atkWins": 231
+              },
+              "Balanced": {
+                "rounds": 502,
+                "atkWins": 271
+              }
+            },
+            "defensePolicies": {
+              "Tactical": {
+                "rounds": 511,
+                "atkWins": 254
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 244
+              },
+              "Rush": {
+                "rounds": 492,
+                "atkWins": 214
+              },
+              "Balanced": {
+                "rounds": 497,
+                "atkWins": 257
+              }
+            },
+            "atkRate": 0.4845,
+            "defRate": 0.5155000000000001,
+            "atkWilson95": [
+              0.4626481664667723,
+              0.5064112619989464
+            ],
+            "timeoutRate": 0.0985,
+            "averageSteps": 9.132
+          },
+          {
+            "seed": 9518427,
+            "rounds": 2000,
+            "atkWins": 995,
+            "timeouts": 216,
+            "steps": 18261,
+            "plants": 1253,
+            "reasons": {
+              "ATK: Elimination": 280,
+              "ATK: Detonation": 715,
+              "DEF: Time out": 216,
+              "DEF: Elimination": 528,
+              "DEF: Defused": 261
+            },
+            "attackPolicies": {
+              "Balanced": {
+                "rounds": 523,
+                "atkWins": 298
+              },
+              "Rush": {
+                "rounds": 513,
+                "atkWins": 225
+              },
+              "Tactical": {
+                "rounds": 487,
+                "atkWins": 191
+              },
+              "Utility-heavy": {
+                "rounds": 477,
+                "atkWins": 281
+              }
+            },
+            "defensePolicies": {
+              "Balanced": {
+                "rounds": 479,
+                "atkWins": 259
+              },
+              "Rush": {
+                "rounds": 515,
+                "atkWins": 254
+              },
+              "Utility-heavy": {
+                "rounds": 528,
+                "atkWins": 248
+              },
+              "Tactical": {
+                "rounds": 478,
+                "atkWins": 234
+              }
+            },
+            "atkRate": 0.4975,
+            "defRate": 0.5025,
+            "atkWilson95": [
+              0.4756130164970905,
+              0.5193965687393156
+            ],
+            "timeoutRate": 0.108,
+            "averageSteps": 9.1305
+          }
+        ]
+      },
+      "fresh": {
+        "rounds": 4000,
+        "atkWins": 1892,
+        "timeouts": 390,
+        "steps": 35567,
+        "plants": 2336,
+        "reasons": {
+          "ATK: Detonation": 1297,
+          "DEF: Elimination": 1265,
+          "ATK: Elimination": 595,
+          "DEF: Time out": 390,
+          "DEF: Defused": 453
+        },
+        "attackPolicies": {
+          "Balanced": {
+            "rounds": 1000,
+            "atkWins": 478
+          },
+          "Rush": {
+            "rounds": 1000,
+            "atkWins": 489
+          },
+          "Tactical": {
+            "rounds": 1000,
+            "atkWins": 476
+          },
+          "Utility-heavy": {
+            "rounds": 1000,
+            "atkWins": 449
+          }
+        },
+        "defensePolicies": {
+          "Balanced": {
+            "rounds": 1000,
+            "atkWins": 462
+          },
+          "Rush": {
+            "rounds": 1000,
+            "atkWins": 461
+          },
+          "Tactical": {
+            "rounds": 1000,
+            "atkWins": 491
+          },
+          "Utility-heavy": {
+            "rounds": 1000,
+            "atkWins": 478
+          }
+        },
+        "atkRate": 0.473,
+        "defRate": 0.527,
+        "atkWilson95": [
+          0.4575610396498291,
+          0.48849077028781485
+        ],
+        "timeoutRate": 0.0975,
+        "averageSteps": 8.89175,
+        "batches": [
+          {
+            "seed": 193751,
+            "rounds": 2000,
+            "atkWins": 935,
+            "timeouts": 191,
+            "steps": 17767,
+            "plants": 1173,
+            "reasons": {
+              "ATK: Detonation": 636,
+              "DEF: Elimination": 634,
+              "ATK: Elimination": 299,
+              "DEF: Time out": 191,
+              "DEF: Defused": 240
+            },
+            "attackPolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 230
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 247
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 229
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 229
+              }
+            },
+            "defensePolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 232
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 237
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 233
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 233
+              }
+            },
+            "atkRate": 0.4675,
+            "defRate": 0.5325,
+            "atkWilson95": [
+              0.44571646184835706,
+              0.4894081462249243
+            ],
+            "timeoutRate": 0.0955,
+            "averageSteps": 8.8835
+          },
+          {
+            "seed": 9518427,
+            "rounds": 2000,
+            "atkWins": 957,
+            "timeouts": 199,
+            "steps": 17800,
+            "plants": 1163,
+            "reasons": {
+              "ATK: Detonation": 661,
+              "ATK: Elimination": 296,
+              "DEF: Elimination": 631,
+              "DEF: Defused": 213,
+              "DEF: Time out": 199
+            },
+            "attackPolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 248
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 242
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 247
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 220
+              }
+            },
+            "defensePolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 230
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 224
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 258
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 245
+              }
+            },
+            "atkRate": 0.4785,
+            "defRate": 0.5215000000000001,
+            "atkWilson95": [
+              0.4566693769960879,
+              0.5004130560370058
+            ],
+            "timeoutRate": 0.0995,
+            "averageSteps": 8.9
+          }
+        ]
+      },
+      "templates": {
+        "AS": {
+          "rounds": 200,
+          "atkWins": 91,
+          "timeouts": 11,
+          "steps": 1765,
+          "plants": 108,
+          "reasons": {
+            "ATK: Elimination": 14,
+            "DEF: Elimination": 81,
+            "ATK: Detonation": 77,
+            "DEF: Time out": 11,
+            "DEF: Defused": 17
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.455,
+          "defRate": 0.5449999999999999,
+          "atkWilson95": [
+            0.387482193098835,
+            0.524213886275119
+          ],
+          "timeoutRate": 0.055,
+          "averageSteps": 8.825
+        },
+        "AP": {
+          "rounds": 200,
+          "atkWins": 32,
+          "timeouts": 7,
+          "steps": 1751,
+          "plants": 35,
+          "reasons": {
+            "DEF: Time out": 7,
+            "DEF: Elimination": 158,
+            "ATK: Elimination": 20,
+            "ATK: Detonation": 12,
+            "DEF: Defused": 3
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.16,
+          "defRate": 0.84,
+          "atkWilson95": [
+            0.1156741203158702,
+            0.21714070162067106
+          ],
+          "timeoutRate": 0.035,
+          "averageSteps": 8.755
+        },
+        "AR": {
+          "rounds": 200,
+          "atkWins": 7,
+          "timeouts": 4,
+          "steps": 1870,
+          "plants": 11,
+          "reasons": {
+            "DEF: Elimination": 186,
+            "DEF: Time out": 4,
+            "ATK: Elimination": 6,
+            "DEF: Defused": 3,
+            "ATK: Detonation": 1
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.035,
+          "defRate": 0.965,
+          "atkWilson95": [
+            0.017055542008567192,
+            0.07047061152229073
+          ],
+          "timeoutRate": 0.02,
+          "averageSteps": 9.35
+        },
+        "BS": {
+          "rounds": 200,
+          "atkWins": 81,
+          "timeouts": 10,
+          "steps": 1771,
+          "plants": 98,
+          "reasons": {
+            "ATK: Detonation": 71,
+            "DEF: Elimination": 92,
+            "DEF: Defused": 17,
+            "ATK: Elimination": 10,
+            "DEF: Time out": 10
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.405,
+          "defRate": 0.595,
+          "atkWilson95": [
+            0.3393777128250677,
+            0.47420289918661307
+          ],
+          "timeoutRate": 0.05,
+          "averageSteps": 8.855
+        },
+        "BP": {
+          "rounds": 200,
+          "atkWins": 25,
+          "timeouts": 1,
+          "steps": 1736,
+          "plants": 26,
+          "reasons": {
+            "DEF: Elimination": 173,
+            "ATK: Elimination": 11,
+            "ATK: Detonation": 14,
+            "DEF: Time out": 1,
+            "DEF: Defused": 1
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.125,
+          "defRate": 0.875,
+          "atkWilson95": [
+            0.08611974475712644,
+            0.17801425002582347
+          ],
+          "timeoutRate": 0.005,
+          "averageSteps": 8.68
+        },
+        "BR": {
+          "rounds": 200,
+          "atkWins": 12,
+          "timeouts": 3,
+          "steps": 1858,
+          "plants": 13,
+          "reasons": {
+            "DEF: Elimination": 184,
+            "ATK: Elimination": 10,
+            "DEF: Time out": 3,
+            "DEF: Defused": 1,
+            "ATK: Detonation": 2
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.06,
+          "defRate": 0.94,
+          "atkWilson95": [
+            0.03465219425433187,
+            0.1019316929576627
+          ],
+          "timeoutRate": 0.015,
+          "averageSteps": 9.29
+        },
+        "CS": {
+          "rounds": 200,
+          "atkWins": 85,
+          "timeouts": 7,
+          "steps": 1742,
+          "plants": 108,
+          "reasons": {
+            "DEF: Elimination": 86,
+            "ATK: Detonation": 85,
+            "DEF: Defused": 22,
+            "DEF: Time out": 7
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.425,
+          "defRate": 0.575,
+          "atkWilson95": [
+            0.3585361254351385,
+            0.49429067352145145
+          ],
+          "timeoutRate": 0.035,
+          "averageSteps": 8.71
+        },
+        "CP": {
+          "rounds": 200,
+          "atkWins": 71,
+          "timeouts": 8,
+          "steps": 1636,
+          "plants": 74,
+          "reasons": {
+            "DEF: Elimination": 118,
+            "ATK: Elimination": 47,
+            "DEF: Time out": 8,
+            "ATK: Detonation": 24,
+            "DEF: Defused": 3
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.355,
+          "defRate": 0.645,
+          "atkWilson95": [
+            0.2919862754043116,
+            0.42347886924509565
+          ],
+          "timeoutRate": 0.04,
+          "averageSteps": 8.18
+        },
+        "CR": {
+          "rounds": 200,
+          "atkWins": 12,
+          "timeouts": 2,
+          "steps": 1567,
+          "plants": 12,
+          "reasons": {
+            "DEF: Elimination": 186,
+            "ATK: Elimination": 10,
+            "ATK: Detonation": 2,
+            "DEF: Time out": 2
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.06,
+          "defRate": 0.94,
+          "atkWilson95": [
+            0.03465219425433187,
+            0.1019316929576627
+          ],
+          "timeoutRate": 0.01,
+          "averageSteps": 7.835
+        }
+      },
+      "spawns": {
+        "west-yard": {
+          "rounds": 400,
+          "atkWins": 277,
+          "timeouts": 18,
+          "steps": 3452,
+          "plants": 317,
+          "reasons": {
+            "DEF: Defused": 42,
+            "ATK: Elimination": 87,
+            "DEF: Elimination": 63,
+            "ATK: Detonation": 190,
+            "DEF: Time out": 18
+          },
+          "attackPolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 63
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 69
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 73
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 72
+            }
+          },
+          "defensePolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 64
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 77
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 68
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 68
+            }
+          },
+          "atkRate": 0.6925,
+          "defRate": 0.3075,
+          "atkWilson95": [
+            0.6456251644125997,
+            0.7357126022686962
+          ],
+          "timeoutRate": 0.045,
+          "averageSteps": 8.63
+        },
+        "east-yard": {
+          "rounds": 400,
+          "atkWins": 288,
+          "timeouts": 12,
+          "steps": 3379,
+          "plants": 323,
+          "reasons": {
+            "ATK: Elimination": 94,
+            "ATK: Detonation": 194,
+            "DEF: Defused": 36,
+            "DEF: Elimination": 64,
+            "DEF: Time out": 12
+          },
+          "attackPolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 72
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 69
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 76
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 71
+            }
+          },
+          "defensePolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 73
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 77
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 66
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 72
+            }
+          },
+          "atkRate": 0.72,
+          "defRate": 0.28,
+          "atkWilson95": [
+            0.6740660138899559,
+            0.7617485766029535
+          ],
+          "timeoutRate": 0.03,
+          "averageSteps": 8.4475
+        }
+      },
+      "uniformStats": {
+        "rounds": 1000,
+        "atkWins": 492,
+        "timeouts": 96,
+        "steps": 8949,
+        "plants": 601,
+        "reasons": {
+          "ATK: Elimination": 183,
+          "DEF: Elimination": 301,
+          "DEF: Time out": 96,
+          "ATK: Detonation": 309,
+          "DEF: Defused": 111
+        },
+        "attackPolicies": {
+          "Balanced": {
+            "rounds": 250,
+            "atkWins": 129
+          },
+          "Rush": {
+            "rounds": 250,
+            "atkWins": 127
+          },
+          "Tactical": {
+            "rounds": 250,
+            "atkWins": 118
+          },
+          "Utility-heavy": {
+            "rounds": 250,
+            "atkWins": 118
+          }
+        },
+        "defensePolicies": {
+          "Balanced": {
+            "rounds": 252,
+            "atkWins": 128
+          },
+          "Rush": {
+            "rounds": 252,
+            "atkWins": 111
+          },
+          "Tactical": {
+            "rounds": 248,
+            "atkWins": 121
+          },
+          "Utility-heavy": {
+            "rounds": 248,
+            "atkWins": 132
+          }
+        },
+        "atkRate": 0.492,
+        "defRate": 0.508,
+        "atkWilson95": [
+          0.4611041586281342,
+          0.5229570695076347
+        ],
+        "timeoutRate": 0.096,
+        "averageSteps": 8.949
+      },
+      "fullMatches": {
+        "rounds": 1176,
+        "atkWins": 564,
+        "timeouts": 139,
+        "steps": 10805,
+        "plants": 718,
+        "reasons": {
+          "DEF: Elimination": 320,
+          "DEF: Defused": 153,
+          "ATK: Detonation": 404,
+          "ATK: Elimination": 160,
+          "DEF: Time out": 139
+        },
+        "attackPolicies": {},
+        "defensePolicies": {},
+        "atkRate": 0.47959183673469385,
+        "defRate": 0.5204081632653061,
+        "atkWilson95": [
+          0.4511516862688339,
+          0.5081648815283528
+        ],
+        "timeoutRate": 0.11819727891156463,
+        "averageSteps": 9.187925170068027,
+        "matches": 200,
+        "playerWins": 103,
+        "playerWinRate": 0.515,
+        "playerWilson95": [
+          0.44610849192745716,
+          0.5833261482812249
+        ]
+      },
+      "counterplay": {
+        "S": {
+          "candidateCount": 13,
+          "selectionSeed": 274901,
+          "plan": {
+            "groups": [
+              {
+                "ops": [
+                  "r01",
+                  "r02",
+                  "r03"
+                ],
+                "path": [
+                  "east-yard",
+                  "stairs-e",
+                  "gallery-e",
+                  "control-e",
+                  "site"
+                ]
+              },
+              {
+                "ops": [
+                  "r04",
+                  "r05"
+                ],
+                "path": [
+                  "east-yard",
+                  "stairs-e",
+                  "gallery-e",
+                  "control-e",
+                  "site"
+                ]
+              }
+            ],
+            "gadgets": {
+              "r02": "site",
+              "r03": "control-e",
+              "r05": "control-e"
+            }
+          },
+          "search": {
+            "rounds": 80,
+            "atkWins": 43,
+            "timeouts": 7,
+            "steps": 752,
+            "plants": 51,
+            "reasons": {
+              "ATK: Detonation": 37,
+              "DEF: Elimination": 22,
+              "DEF: Defused": 8,
+              "ATK: Elimination": 6,
+              "DEF: Time out": 7
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.5375,
+            "defRate": 0.4625,
+            "atkWilson95": [
+              0.42904357591268794,
+              0.6425200643721475
+            ],
+            "timeoutRate": 0.0875,
+            "averageSteps": 9.4
+          },
+          "validation": {
+            "rounds": 600,
+            "atkWins": 278,
+            "timeouts": 77,
+            "steps": 5708,
+            "plants": 363,
+            "reasons": {
+              "ATK: Detonation": 245,
+              "DEF: Elimination": 160,
+              "DEF: Time out": 77,
+              "DEF: Defused": 85,
+              "ATK: Elimination": 33
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.4633333333333333,
+            "defRate": 0.5366666666666666,
+            "atkWilson95": [
+              0.42379315341914553,
+              0.503340037988526
+            ],
+            "timeoutRate": 0.12833333333333333,
+            "averageSteps": 9.513333333333334
+          }
+        },
+        "P": {
+          "candidateCount": 13,
+          "selectionSeed": 274901,
+          "plan": {
+            "groups": [
+              {
+                "ops": [
+                  "r01",
+                  "r02",
+                  "r03"
+                ],
+                "path": [
+                  "west-yard",
+                  "stairs-w",
+                  "gallery-w",
+                  "gallery",
+                  "site"
+                ]
+              },
+              {
+                "ops": [
+                  "r04",
+                  "r05"
+                ],
+                "path": [
+                  "east-yard",
+                  "stairs-e",
+                  "gallery-e",
+                  "gallery",
+                  "site"
+                ]
+              }
+            ],
+            "gadgets": {
+              "r02": "site",
+              "r03": "gallery",
+              "r05": "gallery"
+            }
+          },
+          "search": {
+            "rounds": 80,
+            "atkWins": 75,
+            "timeouts": 0,
+            "steps": 631,
+            "plants": 78,
+            "reasons": {
+              "ATK: Elimination": 57,
+              "ATK: Detonation": 18,
+              "DEF: Elimination": 3,
+              "DEF: Defused": 2
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.9375,
+            "defRate": 0.0625,
+            "atkWilson95": [
+              0.8618985123272557,
+              0.973010624329158
+            ],
+            "timeoutRate": 0,
+            "averageSteps": 7.8875
+          },
+          "validation": {
+            "rounds": 600,
+            "atkWins": 516,
+            "timeouts": 1,
+            "steps": 4790,
+            "plants": 570,
+            "reasons": {
+              "ATK: Elimination": 390,
+              "ATK: Detonation": 126,
+              "DEF: Defused": 54,
+              "DEF: Elimination": 29,
+              "DEF: Time out": 1
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.86,
+            "defRate": 0.14,
+            "atkWilson95": [
+              0.8299394099868245,
+              0.8854801652833111
+            ],
+            "timeoutRate": 0.0016666666666666668,
+            "averageSteps": 7.983333333333333
+          }
+        },
+        "R": {
+          "candidateCount": 13,
+          "selectionSeed": 274901,
+          "plan": {
+            "groups": [
+              {
+                "ops": [
+                  "r01",
+                  "r02",
+                  "r03"
+                ],
+                "path": [
+                  "west-yard",
+                  "stairs-w",
+                  "gallery-w",
+                  "gallery",
+                  "site"
+                ]
+              },
+              {
+                "ops": [
+                  "r04",
+                  "r05"
+                ],
+                "path": [
+                  "west-yard",
+                  "stairs-w",
+                  "gallery-w",
+                  "gallery",
+                  "site"
+                ]
+              }
+            ],
+            "gadgets": {
+              "r02": "site",
+              "r03": "gallery",
+              "r05": "gallery"
+            }
+          },
+          "search": {
+            "rounds": 80,
+            "atkWins": 64,
+            "timeouts": 2,
+            "steps": 570,
+            "plants": 52,
+            "reasons": {
+              "DEF: Elimination": 11,
+              "ATK: Elimination": 63,
+              "DEF: Defused": 3,
+              "DEF: Time out": 2,
+              "ATK: Detonation": 1
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.8,
+            "defRate": 0.19999999999999996,
+            "atkWilson95": [
+              0.6995375627182917,
+              0.8729715595603921
+            ],
+            "timeoutRate": 0.025,
+            "averageSteps": 7.125
+          },
+          "validation": {
+            "rounds": 600,
+            "atkWins": 458,
+            "timeouts": 26,
+            "steps": 4324,
+            "plants": 366,
+            "reasons": {
+              "ATK: Elimination": 441,
+              "DEF: Elimination": 90,
+              "DEF: Defused": 26,
+              "ATK: Detonation": 17,
+              "DEF: Time out": 26
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.7633333333333333,
+            "defRate": 0.2366666666666667,
+            "atkWilson95": [
+              0.727715735944399,
+              0.7956004348550519
+            ],
+            "timeoutRate": 0.043333333333333335,
+            "averageSteps": 7.206666666666667
+          }
+        }
+      },
+      "checks": {
+        "pooledIntervalInside45to55": true,
+        "freshIntervalInside45to55": true,
+        "pooledTimeoutAtMost15": true,
+        "freshTimeoutAtMost15": true,
+        "counterToEachDefenseTemplate": true
+      },
+      "status": "PASS"
+    },
+    "Helix Relay": {
+      "kind": "competitive",
+      "shape": "Diagonal diamond",
+      "geometry": {
+        "zones": 15,
+        "doors": 22,
+        "independentApproaches": 4,
+        "shortestRoutes": {
+          "service-road": 4,
+          "tram-stop": 3,
+          "canal-walk": 3
+        },
+        "objectiveEntrances": 4
+      },
+      "pool": {
+        "rounds": 4000,
+        "atkWins": 1900,
+        "timeouts": 201,
+        "steps": 31416,
+        "plants": 2341,
+        "reasons": {
+          "ATK: Detonation": 1408,
+          "DEF: Time out": 201,
+          "DEF: Elimination": 1450,
+          "DEF: Defused": 449,
+          "ATK: Elimination": 492
+        },
+        "attackPolicies": {
+          "Balanced": {
+            "rounds": 1041,
+            "atkWins": 461
+          },
+          "Rush": {
+            "rounds": 999,
+            "atkWins": 363
+          },
+          "Tactical": {
+            "rounds": 978,
+            "atkWins": 556
+          },
+          "Utility-heavy": {
+            "rounds": 982,
+            "atkWins": 520
+          }
+        },
+        "defensePolicies": {
+          "Utility-heavy": {
+            "rounds": 965,
+            "atkWins": 598
+          },
+          "Tactical": {
+            "rounds": 1006,
+            "atkWins": 360
+          },
+          "Rush": {
+            "rounds": 986,
+            "atkWins": 493
+          },
+          "Balanced": {
+            "rounds": 1043,
+            "atkWins": 449
+          }
+        },
+        "atkRate": 0.475,
+        "defRate": 0.525,
+        "atkWilson95": [
+          0.45955589810403885,
+          0.49049207406044626
+        ],
+        "timeoutRate": 0.05025,
+        "averageSteps": 7.854,
+        "batches": [
+          {
+            "seed": 193751,
+            "rounds": 2000,
+            "atkWins": 977,
+            "timeouts": 105,
+            "steps": 15757,
+            "plants": 1176,
+            "reasons": {
+              "ATK: Detonation": 725,
+              "DEF: Time out": 105,
+              "DEF: Elimination": 717,
+              "DEF: Defused": 201,
+              "ATK: Elimination": 252
+            },
+            "attackPolicies": {
+              "Balanced": {
+                "rounds": 551,
+                "atkWins": 245
+              },
+              "Rush": {
+                "rounds": 483,
+                "atkWins": 181
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 292
+              },
+              "Utility-heavy": {
+                "rounds": 466,
+                "atkWins": 259
+              }
+            },
+            "defensePolicies": {
+              "Utility-heavy": {
+                "rounds": 492,
+                "atkWins": 311
+              },
+              "Tactical": {
+                "rounds": 488,
+                "atkWins": 179
+              },
+              "Rush": {
+                "rounds": 479,
+                "atkWins": 249
+              },
+              "Balanced": {
+                "rounds": 541,
+                "atkWins": 238
+              }
+            },
+            "atkRate": 0.4885,
+            "defRate": 0.5115000000000001,
+            "atkWilson95": [
+              0.4666357769044239,
+              0.5104083151830447
+            ],
+            "timeoutRate": 0.0525,
+            "averageSteps": 7.8785
+          },
+          {
+            "seed": 9518427,
+            "rounds": 2000,
+            "atkWins": 923,
+            "timeouts": 96,
+            "steps": 15659,
+            "plants": 1165,
+            "reasons": {
+              "ATK: Detonation": 683,
+              "ATK: Elimination": 240,
+              "DEF: Elimination": 733,
+              "DEF: Defused": 248,
+              "DEF: Time out": 96
+            },
+            "attackPolicies": {
+              "Rush": {
+                "rounds": 516,
+                "atkWins": 182
+              },
+              "Balanced": {
+                "rounds": 490,
+                "atkWins": 216
+              },
+              "Tactical": {
+                "rounds": 478,
+                "atkWins": 264
+              },
+              "Utility-heavy": {
+                "rounds": 516,
+                "atkWins": 261
+              }
+            },
+            "defensePolicies": {
+              "Balanced": {
+                "rounds": 502,
+                "atkWins": 211
+              },
+              "Rush": {
+                "rounds": 507,
+                "atkWins": 244
+              },
+              "Utility-heavy": {
+                "rounds": 473,
+                "atkWins": 287
+              },
+              "Tactical": {
+                "rounds": 518,
+                "atkWins": 181
+              }
+            },
+            "atkRate": 0.4615,
+            "defRate": 0.5385,
+            "atkWilson95": [
+              0.4397466277497131,
+              0.48340098489094324
+            ],
+            "timeoutRate": 0.048,
+            "averageSteps": 7.8295
+          }
+        ]
+      },
+      "fresh": {
+        "rounds": 4000,
+        "atkWins": 1941,
+        "timeouts": 291,
+        "steps": 32482,
+        "plants": 2422,
+        "reasons": {
+          "ATK: Detonation": 1459,
+          "DEF: Defused": 482,
+          "DEF: Time out": 291,
+          "DEF: Elimination": 1286,
+          "ATK: Elimination": 482
+        },
+        "attackPolicies": {
+          "Balanced": {
+            "rounds": 1000,
+            "atkWins": 472
+          },
+          "Rush": {
+            "rounds": 1000,
+            "atkWins": 499
+          },
+          "Tactical": {
+            "rounds": 1000,
+            "atkWins": 498
+          },
+          "Utility-heavy": {
+            "rounds": 1000,
+            "atkWins": 472
+          }
+        },
+        "defensePolicies": {
+          "Balanced": {
+            "rounds": 1000,
+            "atkWins": 477
+          },
+          "Rush": {
+            "rounds": 1000,
+            "atkWins": 459
+          },
+          "Tactical": {
+            "rounds": 1000,
+            "atkWins": 518
+          },
+          "Utility-heavy": {
+            "rounds": 1000,
+            "atkWins": 487
+          }
+        },
+        "atkRate": 0.48525,
+        "defRate": 0.51475,
+        "atkWilson95": [
+          0.46978344496300084,
+          0.5007448586140455
+        ],
+        "timeoutRate": 0.07275,
+        "averageSteps": 8.1205,
+        "batches": [
+          {
+            "seed": 193751,
+            "rounds": 2000,
+            "atkWins": 975,
+            "timeouts": 142,
+            "steps": 16259,
+            "plants": 1210,
+            "reasons": {
+              "ATK: Detonation": 726,
+              "DEF: Defused": 234,
+              "DEF: Time out": 142,
+              "DEF: Elimination": 649,
+              "ATK: Elimination": 249
+            },
+            "attackPolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 240
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 253
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 248
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 234
+              }
+            },
+            "defensePolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 238
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 231
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 267
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 239
+              }
+            },
+            "atkRate": 0.4875,
+            "defRate": 0.5125,
+            "atkWilson95": [
+              0.4656387430577313,
+              0.5094091831243
+            ],
+            "timeoutRate": 0.071,
+            "averageSteps": 8.1295
+          },
+          {
+            "seed": 9518427,
+            "rounds": 2000,
+            "atkWins": 966,
+            "timeouts": 149,
+            "steps": 16223,
+            "plants": 1212,
+            "reasons": {
+              "ATK: Detonation": 733,
+              "ATK: Elimination": 233,
+              "DEF: Defused": 248,
+              "DEF: Elimination": 637,
+              "DEF: Time out": 149
+            },
+            "attackPolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 232
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 246
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 250
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 238
+              }
+            },
+            "defensePolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 239
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 228
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 251
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 248
+              }
+            },
+            "atkRate": 0.483,
+            "defRate": 0.517,
+            "atkWilson95": [
+              0.46115317354684554,
+              0.504912006060717
+            ],
+            "timeoutRate": 0.0745,
+            "averageSteps": 8.1115
+          }
+        ]
+      },
+      "templates": {
+        "AS": {
+          "rounds": 200,
+          "atkWins": 38,
+          "timeouts": 11,
+          "steps": 2009,
+          "plants": 57,
+          "reasons": {
+            "ATK: Detonation": 37,
+            "DEF: Elimination": 132,
+            "DEF: Defused": 19,
+            "DEF: Time out": 11,
+            "ATK: Elimination": 1
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.19,
+          "defRate": 0.81,
+          "atkWilson95": [
+            0.14167171527790676,
+            0.25001238707599854
+          ],
+          "timeoutRate": 0.055,
+          "averageSteps": 10.045
+        },
+        "AP": {
+          "rounds": 200,
+          "atkWins": 97,
+          "timeouts": 20,
+          "steps": 1921,
+          "plants": 138,
+          "reasons": {
+            "DEF: Elimination": 42,
+            "ATK: Detonation": 96,
+            "DEF: Defused": 41,
+            "DEF: Time out": 20,
+            "ATK: Elimination": 1
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.485,
+          "defRate": 0.515,
+          "atkWilson95": [
+            0.41667385171877513,
+            0.5538915080725428
+          ],
+          "timeoutRate": 0.1,
+          "averageSteps": 9.605
+        },
+        "AR": {
+          "rounds": 200,
+          "atkWins": 154,
+          "timeouts": 16,
+          "steps": 1848,
+          "plants": 179,
+          "reasons": {
+            "ATK: Elimination": 95,
+            "ATK: Detonation": 59,
+            "DEF: Defused": 28,
+            "DEF: Time out": 16,
+            "DEF: Elimination": 2
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.77,
+          "defRate": 0.22999999999999998,
+          "atkWilson95": [
+            0.7069169563469642,
+            0.8229065674093119
+          ],
+          "timeoutRate": 0.08,
+          "averageSteps": 9.24
+        },
+        "BS": {
+          "rounds": 200,
+          "atkWins": 45,
+          "timeouts": 14,
+          "steps": 1927,
+          "plants": 60,
+          "reasons": {
+            "DEF: Elimination": 127,
+            "DEF: Time out": 14,
+            "DEF: Defused": 14,
+            "ATK: Detonation": 45
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.225,
+          "defRate": 0.775,
+          "atkWilson95": [
+            0.17262369715089126,
+            0.2877412323566053
+          ],
+          "timeoutRate": 0.07,
+          "averageSteps": 9.635
+        },
+        "BP": {
+          "rounds": 200,
+          "atkWins": 103,
+          "timeouts": 17,
+          "steps": 1944,
+          "plants": 136,
+          "reasons": {
+            "ATK: Detonation": 103,
+            "DEF: Defused": 33,
+            "DEF: Time out": 17,
+            "DEF: Elimination": 47
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.515,
+          "defRate": 0.485,
+          "atkWilson95": [
+            0.44610849192745716,
+            0.5833261482812249
+          ],
+          "timeoutRate": 0.085,
+          "averageSteps": 9.72
+        },
+        "BR": {
+          "rounds": 200,
+          "atkWins": 154,
+          "timeouts": 19,
+          "steps": 1914,
+          "plants": 174,
+          "reasons": {
+            "ATK: Elimination": 103,
+            "DEF: Defused": 25,
+            "ATK: Detonation": 51,
+            "DEF: Time out": 19,
+            "DEF: Elimination": 2
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.77,
+          "defRate": 0.22999999999999998,
+          "atkWilson95": [
+            0.7069169563469642,
+            0.8229065674093119
+          ],
+          "timeoutRate": 0.095,
+          "averageSteps": 9.57
+        },
+        "CS": {
+          "rounds": 200,
+          "atkWins": 29,
+          "timeouts": 6,
+          "steps": 1778,
+          "plants": 48,
+          "reasons": {
+            "DEF: Elimination": 146,
+            "DEF: Time out": 6,
+            "DEF: Defused": 19,
+            "ATK: Detonation": 24,
+            "ATK: Elimination": 5
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.145,
+          "defRate": 0.855,
+          "atkWilson95": [
+            0.10289350642004402,
+            0.20048667530781522
+          ],
+          "timeoutRate": 0.03,
+          "averageSteps": 8.89
+        },
+        "CP": {
+          "rounds": 200,
+          "atkWins": 30,
+          "timeouts": 14,
+          "steps": 1868,
+          "plants": 58,
+          "reasons": {
+            "DEF: Elimination": 128,
+            "ATK: Detonation": 29,
+            "DEF: Defused": 28,
+            "DEF: Time out": 14,
+            "ATK: Elimination": 1
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.15,
+          "defRate": 0.85,
+          "atkWilson95": [
+            0.10713593562241995,
+            0.20605579284166659
+          ],
+          "timeoutRate": 0.07,
+          "averageSteps": 9.34
+        },
+        "CR": {
+          "rounds": 200,
+          "atkWins": 81,
+          "timeouts": 52,
+          "steps": 1911,
+          "plants": 110,
+          "reasons": {
+            "DEF: Elimination": 38,
+            "DEF: Time out": 52,
+            "ATK: Elimination": 61,
+            "ATK: Detonation": 20,
+            "DEF: Defused": 29
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.405,
+          "defRate": 0.595,
+          "atkWilson95": [
+            0.3393777128250677,
+            0.47420289918661307
+          ],
+          "timeoutRate": 0.26,
+          "averageSteps": 9.555
+        }
+      },
+      "spawns": {
+        "service-road": {
+          "rounds": 400,
+          "atkWins": 244,
+          "timeouts": 16,
+          "steps": 3330,
+          "plants": 285,
+          "reasons": {
+            "DEF: Defused": 41,
+            "DEF: Elimination": 99,
+            "ATK: Detonation": 175,
+            "ATK: Elimination": 69,
+            "DEF: Time out": 16
+          },
+          "attackPolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 58
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 56
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 65
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 65
+            }
+          },
+          "defensePolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 57
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 60
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 62
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 65
+            }
+          },
+          "atkRate": 0.61,
+          "defRate": 0.39,
+          "atkWilson95": [
+            0.5613714064462345,
+            0.6565358888002202
+          ],
+          "timeoutRate": 0.04,
+          "averageSteps": 8.325
+        },
+        "tram-stop": {
+          "rounds": 400,
+          "atkWins": 254,
+          "timeouts": 16,
+          "steps": 3057,
+          "plants": 310,
+          "reasons": {
+            "ATK: Detonation": 173,
+            "DEF: Elimination": 74,
+            "ATK: Elimination": 81,
+            "DEF: Defused": 56,
+            "DEF: Time out": 16
+          },
+          "attackPolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 70
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 63
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 57
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 64
+            }
+          },
+          "defensePolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 66
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 65
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 59
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 64
+            }
+          },
+          "atkRate": 0.635,
+          "defRate": 0.365,
+          "atkWilson95": [
+            0.5867439222120918,
+            0.680687758317648
+          ],
+          "timeoutRate": 0.04,
+          "averageSteps": 7.6425
+        },
+        "canal-walk": {
+          "rounds": 400,
+          "atkWins": 252,
+          "timeouts": 18,
+          "steps": 3041,
+          "plants": 305,
+          "reasons": {
+            "ATK: Detonation": 215,
+            "ATK: Elimination": 37,
+            "DEF: Time out": 18,
+            "DEF: Defused": 53,
+            "DEF: Elimination": 77
+          },
+          "attackPolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 65
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 55
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 68
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 64
+            }
+          },
+          "defensePolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 56
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 65
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 64
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 67
+            }
+          },
+          "atkRate": 0.63,
+          "defRate": 0.37,
+          "atkWilson95": [
+            0.5816587842920732,
+            0.6758680191810097
+          ],
+          "timeoutRate": 0.045,
+          "averageSteps": 7.6025
+        }
+      },
+      "uniformStats": {
+        "rounds": 1000,
+        "atkWins": 538,
+        "timeouts": 86,
+        "steps": 8218,
+        "plants": 633,
+        "reasons": {
+          "ATK: Detonation": 377,
+          "DEF: Defused": 100,
+          "DEF: Elimination": 276,
+          "DEF: Time out": 86,
+          "ATK: Elimination": 161
+        },
+        "attackPolicies": {
+          "Balanced": {
+            "rounds": 250,
+            "atkWins": 139
+          },
+          "Rush": {
+            "rounds": 250,
+            "atkWins": 138
+          },
+          "Tactical": {
+            "rounds": 250,
+            "atkWins": 135
+          },
+          "Utility-heavy": {
+            "rounds": 250,
+            "atkWins": 126
+          }
+        },
+        "defensePolicies": {
+          "Balanced": {
+            "rounds": 252,
+            "atkWins": 141
+          },
+          "Rush": {
+            "rounds": 252,
+            "atkWins": 129
+          },
+          "Tactical": {
+            "rounds": 248,
+            "atkWins": 129
+          },
+          "Utility-heavy": {
+            "rounds": 248,
+            "atkWins": 139
+          }
+        },
+        "atkRate": 0.538,
+        "defRate": 0.46199999999999997,
+        "atkWilson95": [
+          0.5070132970793998,
+          0.5686958692756982
+        ],
+        "timeoutRate": 0.086,
+        "averageSteps": 8.218
+      },
+      "fullMatches": {
+        "rounds": 1148,
+        "atkWins": 532,
+        "timeouts": 57,
+        "steps": 8916,
+        "plants": 658,
+        "reasons": {
+          "ATK: Detonation": 394,
+          "DEF: Elimination": 430,
+          "DEF: Time out": 57,
+          "ATK: Elimination": 138,
+          "DEF: Defused": 129
+        },
+        "attackPolicies": {},
+        "defensePolicies": {},
+        "atkRate": 0.4634146341463415,
+        "defRate": 0.5365853658536586,
+        "atkWilson95": [
+          0.43473880810453247,
+          0.49233448886985953
+        ],
+        "timeoutRate": 0.04965156794425087,
+        "averageSteps": 7.7665505226480835,
+        "matches": 200,
+        "playerWins": 99,
+        "playerWinRate": 0.495,
+        "playerWilson95": [
+          0.4264584535990475,
+          0.5637299996647251
+        ]
+      },
+      "counterplay": {
+        "S": {
+          "candidateCount": 55,
+          "selectionSeed": 274901,
+          "plan": {
+            "groups": [
+              {
+                "ops": [
+                  "r01",
+                  "r02",
+                  "r03"
+                ],
+                "path": [
+                  "service-road",
+                  "reception",
+                  "archive",
+                  "switchboard",
+                  "site"
+                ]
+              },
+              {
+                "ops": [
+                  "r04",
+                  "r05"
+                ],
+                "path": [
+                  "service-road",
+                  "reception",
+                  "archive",
+                  "switchboard",
+                  "site"
+                ]
+              }
+            ],
+            "gadgets": {
+              "r02": "site",
+              "r03": "switchboard",
+              "r05": "switchboard"
+            }
+          },
+          "search": {
+            "rounds": 80,
+            "atkWins": 70,
+            "timeouts": 1,
+            "steps": 690,
+            "plants": 74,
+            "reasons": {
+              "ATK: Detonation": 70,
+              "DEF: Defused": 4,
+              "DEF: Elimination": 5,
+              "DEF: Time out": 1
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.875,
+            "defRate": 0.125,
+            "atkWilson95": [
+              0.7849719790084033,
+              0.9306644238399513
+            ],
+            "timeoutRate": 0.0125,
+            "averageSteps": 8.625
+          },
+          "validation": {
+            "rounds": 600,
+            "atkWins": 482,
+            "timeouts": 21,
+            "steps": 5135,
+            "plants": 540,
+            "reasons": {
+              "ATK: Detonation": 481,
+              "DEF: Defused": 58,
+              "DEF: Elimination": 39,
+              "DEF: Time out": 21,
+              "ATK: Elimination": 1
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.8033333333333333,
+            "defRate": 0.19666666666666666,
+            "atkWilson95": [
+              0.7696419757400986,
+              0.8331652589782564
+            ],
+            "timeoutRate": 0.035,
+            "averageSteps": 8.558333333333334
+          }
+        },
+        "P": {
+          "candidateCount": 55,
+          "selectionSeed": 274901,
+          "plan": {
+            "groups": [
+              {
+                "ops": [
+                  "r01",
+                  "r02",
+                  "r03"
+                ],
+                "path": [
+                  "service-road",
+                  "reception",
+                  "archive",
+                  "switchboard",
+                  "site"
+                ]
+              },
+              {
+                "ops": [
+                  "r04",
+                  "r05"
+                ],
+                "path": [
+                  "service-road",
+                  "reception",
+                  "archive",
+                  "switchboard",
+                  "site"
+                ]
+              }
+            ],
+            "gadgets": {
+              "r02": "site",
+              "r03": "switchboard",
+              "r05": "switchboard"
+            }
+          },
+          "search": {
+            "rounds": 80,
+            "atkWins": 68,
+            "timeouts": 0,
+            "steps": 725,
+            "plants": 75,
+            "reasons": {
+              "DEF: Defused": 7,
+              "ATK: Detonation": 68,
+              "DEF: Elimination": 5
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.85,
+            "defRate": 0.15000000000000002,
+            "atkWilson95": [
+              0.7558677143867665,
+              0.9120595949383645
+            ],
+            "timeoutRate": 0,
+            "averageSteps": 9.0625
+          },
+          "validation": {
+            "rounds": 600,
+            "atkWins": 491,
+            "timeouts": 18,
+            "steps": 5579,
+            "plants": 532,
+            "reasons": {
+              "ATK: Detonation": 488,
+              "DEF: Elimination": 50,
+              "DEF: Defused": 41,
+              "DEF: Time out": 18,
+              "ATK: Elimination": 3
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.8183333333333334,
+            "defRate": 0.18166666666666664,
+            "atkWilson95": [
+              0.7854884512432293,
+              0.8471279324447146
+            ],
+            "timeoutRate": 0.03,
+            "averageSteps": 9.298333333333334
+          }
+        },
+        "R": {
+          "candidateCount": 55,
+          "selectionSeed": 274901,
+          "plan": {
+            "groups": [
+              {
+                "ops": [
+                  "r01",
+                  "r02",
+                  "r03"
+                ],
+                "path": [
+                  "service-road",
+                  "reception",
+                  "archive",
+                  "uplink",
+                  "antenna",
+                  "cooling",
+                  "site"
+                ]
+              },
+              {
+                "ops": [
+                  "r04",
+                  "r05"
+                ],
+                "path": [
+                  "tram-stop",
+                  "workshop",
+                  "switchboard",
+                  "archive",
+                  "uplink",
+                  "site"
+                ]
+              }
+            ],
+            "gadgets": {
+              "r02": "site",
+              "r03": "cooling",
+              "r05": "uplink"
+            }
+          },
+          "search": {
+            "rounds": 80,
+            "atkWins": 67,
+            "timeouts": 1,
+            "steps": 704,
+            "plants": 75,
+            "reasons": {
+              "DEF: Defused": 8,
+              "ATK: Elimination": 54,
+              "ATK: Detonation": 13,
+              "DEF: Time out": 1,
+              "DEF: Elimination": 4
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.8375,
+            "defRate": 0.16249999999999998,
+            "atkWilson95": [
+              0.7415709565930229,
+              0.9025018059704963
+            ],
+            "timeoutRate": 0.0125,
+            "averageSteps": 8.8
+          },
+          "validation": {
+            "rounds": 600,
+            "atkWins": 459,
+            "timeouts": 31,
+            "steps": 5259,
+            "plants": 485,
+            "reasons": {
+              "ATK: Elimination": 374,
+              "DEF: Time out": 31,
+              "DEF: Elimination": 75,
+              "ATK: Detonation": 85,
+              "DEF: Defused": 35
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.765,
+            "defRate": 0.235,
+            "atkWilson95": [
+              0.7294538938786385,
+              0.7971744045841002
+            ],
+            "timeoutRate": 0.051666666666666666,
+            "averageSteps": 8.765
+          }
+        }
+      },
+      "checks": {
+        "pooledIntervalInside45to55": true,
+        "freshIntervalInside45to55": true,
+        "pooledTimeoutAtMost15": true,
+        "freshTimeoutAtMost15": true,
+        "counterToEachDefenseTemplate": true
+      },
+      "status": "PASS"
+    },
+    "Breakwater Terminal": {
+      "kind": "competitive",
+      "shape": "L-shaped waterfront",
+      "geometry": {
+        "zones": 15,
+        "doors": 21,
+        "independentApproaches": 3,
+        "shortestRoutes": {
+          "north-road": 3,
+          "quay": 3,
+          "rail-yard": 3
+        },
+        "objectiveEntrances": 3
+      },
+      "pool": {
+        "rounds": 4000,
+        "atkWins": 2134,
+        "timeouts": 302,
+        "steps": 31677,
+        "plants": 2556,
+        "reasons": {
+          "ATK: Elimination": 412,
+          "DEF: Defused": 422,
+          "DEF: Elimination": 1142,
+          "ATK: Detonation": 1722,
+          "DEF: Time out": 302
+        },
+        "attackPolicies": {
+          "Balanced": {
+            "rounds": 1050,
+            "atkWins": 640
+          },
+          "Utility-heavy": {
+            "rounds": 968,
+            "atkWins": 469
+          },
+          "Tactical": {
+            "rounds": 950,
+            "atkWins": 527
+          },
+          "Rush": {
+            "rounds": 1032,
+            "atkWins": 498
+          }
+        },
+        "defensePolicies": {
+          "Rush": {
+            "rounds": 995,
+            "atkWins": 629
+          },
+          "Tactical": {
+            "rounds": 1008,
+            "atkWins": 357
+          },
+          "Utility-heavy": {
+            "rounds": 997,
+            "atkWins": 493
+          },
+          "Balanced": {
+            "rounds": 1000,
+            "atkWins": 655
+          }
+        },
+        "atkRate": 0.5335,
+        "defRate": 0.4665,
+        "atkWilson95": [
+          0.5180151850863013,
+          0.5489205322132886
+        ],
+        "timeoutRate": 0.0755,
+        "averageSteps": 7.91925,
+        "batches": [
+          {
+            "seed": 193751,
+            "rounds": 2000,
+            "atkWins": 1055,
+            "timeouts": 160,
+            "steps": 15958,
+            "plants": 1273,
+            "reasons": {
+              "ATK: Elimination": 202,
+              "DEF: Defused": 217,
+              "DEF: Elimination": 568,
+              "ATK: Detonation": 853,
+              "DEF: Time out": 160
+            },
+            "attackPolicies": {
+              "Balanced": {
+                "rounds": 531,
+                "atkWins": 311
+              },
+              "Utility-heavy": {
+                "rounds": 452,
+                "atkWins": 222
+              },
+              "Tactical": {
+                "rounds": 494,
+                "atkWins": 262
+              },
+              "Rush": {
+                "rounds": 523,
+                "atkWins": 260
+              }
+            },
+            "defensePolicies": {
+              "Rush": {
+                "rounds": 509,
+                "atkWins": 316
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 178
+              },
+              "Utility-heavy": {
+                "rounds": 478,
+                "atkWins": 227
+              },
+              "Balanced": {
+                "rounds": 513,
+                "atkWins": 334
+              }
+            },
+            "atkRate": 0.5275,
+            "defRate": 0.47250000000000003,
+            "atkWilson95": [
+              0.5055883051812351,
+              0.5493062572182958
+            ],
+            "timeoutRate": 0.08,
+            "averageSteps": 7.979
+          },
+          {
+            "seed": 9518427,
+            "rounds": 2000,
+            "atkWins": 1079,
+            "timeouts": 142,
+            "steps": 15719,
+            "plants": 1283,
+            "reasons": {
+              "DEF: Elimination": 574,
+              "ATK: Detonation": 869,
+              "DEF: Time out": 142,
+              "ATK: Elimination": 210,
+              "DEF: Defused": 205
+            },
+            "attackPolicies": {
+              "Utility-heavy": {
+                "rounds": 516,
+                "atkWins": 247
+              },
+              "Rush": {
+                "rounds": 509,
+                "atkWins": 238
+              },
+              "Balanced": {
+                "rounds": 519,
+                "atkWins": 329
+              },
+              "Tactical": {
+                "rounds": 456,
+                "atkWins": 265
+              }
+            },
+            "defensePolicies": {
+              "Rush": {
+                "rounds": 486,
+                "atkWins": 313
+              },
+              "Tactical": {
+                "rounds": 508,
+                "atkWins": 179
+              },
+              "Utility-heavy": {
+                "rounds": 519,
+                "atkWins": 266
+              },
+              "Balanced": {
+                "rounds": 487,
+                "atkWins": 321
+              }
+            },
+            "atkRate": 0.5395,
+            "defRate": 0.4605,
+            "atkWilson95": [
+              0.517600517072657,
+              0.5612480361921239
+            ],
+            "timeoutRate": 0.071,
+            "averageSteps": 7.8595
+          }
+        ]
+      },
+      "fresh": {
+        "rounds": 4000,
+        "atkWins": 1869,
+        "timeouts": 284,
+        "steps": 31308,
+        "plants": 2348,
+        "reasons": {
+          "DEF: Elimination": 1366,
+          "ATK: Detonation": 1413,
+          "ATK: Elimination": 456,
+          "DEF: Defused": 481,
+          "DEF: Time out": 284
+        },
+        "attackPolicies": {
+          "Balanced": {
+            "rounds": 1000,
+            "atkWins": 471
+          },
+          "Rush": {
+            "rounds": 1000,
+            "atkWins": 476
+          },
+          "Tactical": {
+            "rounds": 1000,
+            "atkWins": 486
+          },
+          "Utility-heavy": {
+            "rounds": 1000,
+            "atkWins": 436
+          }
+        },
+        "defensePolicies": {
+          "Balanced": {
+            "rounds": 1000,
+            "atkWins": 467
+          },
+          "Rush": {
+            "rounds": 1000,
+            "atkWins": 492
+          },
+          "Tactical": {
+            "rounds": 1000,
+            "atkWins": 446
+          },
+          "Utility-heavy": {
+            "rounds": 1000,
+            "atkWins": 464
+          }
+        },
+        "atkRate": 0.46725,
+        "defRate": 0.5327500000000001,
+        "atkWilson95": [
+          0.45182720723384934,
+          0.48273563630162625
+        ],
+        "timeoutRate": 0.071,
+        "averageSteps": 7.827,
+        "batches": [
+          {
+            "seed": 193751,
+            "rounds": 2000,
+            "atkWins": 954,
+            "timeouts": 145,
+            "steps": 15714,
+            "plants": 1183,
+            "reasons": {
+              "DEF: Elimination": 672,
+              "ATK: Detonation": 731,
+              "ATK: Elimination": 223,
+              "DEF: Defused": 229,
+              "DEF: Time out": 145
+            },
+            "attackPolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 227
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 245
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 250
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 232
+              }
+            },
+            "defensePolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 247
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 261
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 224
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 222
+              }
+            },
+            "atkRate": 0.477,
+            "defRate": 0.523,
+            "atkWilson95": [
+              0.4551751724430595,
+              0.49891301173187796
+            ],
+            "timeoutRate": 0.0725,
+            "averageSteps": 7.857
+          },
+          {
+            "seed": 9518427,
+            "rounds": 2000,
+            "atkWins": 915,
+            "timeouts": 139,
+            "steps": 15594,
+            "plants": 1165,
+            "reasons": {
+              "ATK: Detonation": 682,
+              "DEF: Elimination": 694,
+              "DEF: Defused": 252,
+              "DEF: Time out": 139,
+              "ATK: Elimination": 233
+            },
+            "attackPolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 244
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 231
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 236
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 204
+              }
+            },
+            "defensePolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 220
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 231
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 222
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 242
+              }
+            },
+            "atkRate": 0.4575,
+            "defRate": 0.5425,
+            "atkWilson95": [
+              0.4357685014943605,
+              0.47939444752454585
+            ],
+            "timeoutRate": 0.0695,
+            "averageSteps": 7.797
+          }
+        ]
+      },
+      "templates": {
+        "AS": {
+          "rounds": 200,
+          "atkWins": 152,
+          "timeouts": 10,
+          "steps": 1658,
+          "plants": 170,
+          "reasons": {
+            "ATK: Elimination": 79,
+            "DEF: Time out": 10,
+            "DEF: Elimination": 20,
+            "ATK: Detonation": 73,
+            "DEF: Defused": 18
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.76,
+          "defRate": 0.24,
+          "atkWilson95": [
+            0.6962665902079583,
+            0.8139338400758631
+          ],
+          "timeoutRate": 0.05,
+          "averageSteps": 8.29
+        },
+        "AP": {
+          "rounds": 200,
+          "atkWins": 184,
+          "timeouts": 0,
+          "steps": 1353,
+          "plants": 192,
+          "reasons": {
+            "ATK: Detonation": 46,
+            "DEF: Elimination": 8,
+            "ATK: Elimination": 138,
+            "DEF: Defused": 8
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.92,
+          "defRate": 0.07999999999999996,
+          "atkWilson95": [
+            0.874010511732856,
+            0.9501594141102401
+          ],
+          "timeoutRate": 0,
+          "averageSteps": 6.765
+        },
+        "AR": {
+          "rounds": 200,
+          "atkWins": 94,
+          "timeouts": 7,
+          "steps": 1591,
+          "plants": 130,
+          "reasons": {
+            "ATK: Detonation": 93,
+            "DEF: Elimination": 63,
+            "ATK: Elimination": 1,
+            "DEF: Defused": 36,
+            "DEF: Time out": 7
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.47,
+          "defRate": 0.53,
+          "atkWilson95": [
+            0.40204754873265425,
+            0.5390831708499817
+          ],
+          "timeoutRate": 0.035,
+          "averageSteps": 7.955
+        },
+        "BS": {
+          "rounds": 200,
+          "atkWins": 94,
+          "timeouts": 4,
+          "steps": 1546,
+          "plants": 110,
+          "reasons": {
+            "ATK: Detonation": 63,
+            "ATK: Elimination": 31,
+            "DEF: Elimination": 87,
+            "DEF: Defused": 15,
+            "DEF: Time out": 4
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.47,
+          "defRate": 0.53,
+          "atkWilson95": [
+            0.40204754873265425,
+            0.5390831708499817
+          ],
+          "timeoutRate": 0.02,
+          "averageSteps": 7.73
+        },
+        "BP": {
+          "rounds": 200,
+          "atkWins": 35,
+          "timeouts": 2,
+          "steps": 1605,
+          "plants": 47,
+          "reasons": {
+            "DEF: Elimination": 152,
+            "ATK: Elimination": 22,
+            "DEF: Time out": 2,
+            "ATK: Detonation": 13,
+            "DEF: Defused": 11
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.175,
+          "defRate": 0.825,
+          "atkWilson95": [
+            0.12860515066273331,
+            0.23364431148248993
+          ],
+          "timeoutRate": 0.01,
+          "averageSteps": 8.025
+        },
+        "BR": {
+          "rounds": 200,
+          "atkWins": 0,
+          "timeouts": 1,
+          "steps": 1259,
+          "plants": 0,
+          "reasons": {
+            "DEF: Elimination": 199,
+            "DEF: Time out": 1
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0,
+          "defRate": 1,
+          "atkWilson95": [
+            1.734723475976807e-18,
+            0.018845326377266575
+          ],
+          "timeoutRate": 0.005,
+          "averageSteps": 6.295
+        },
+        "CS": {
+          "rounds": 200,
+          "atkWins": 97,
+          "timeouts": 4,
+          "steps": 1493,
+          "plants": 120,
+          "reasons": {
+            "DEF: Elimination": 76,
+            "DEF: Defused": 23,
+            "ATK: Detonation": 72,
+            "ATK: Elimination": 25,
+            "DEF: Time out": 4
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.485,
+          "defRate": 0.515,
+          "atkWilson95": [
+            0.41667385171877513,
+            0.5538915080725428
+          ],
+          "timeoutRate": 0.02,
+          "averageSteps": 7.465
+        },
+        "CP": {
+          "rounds": 200,
+          "atkWins": 93,
+          "timeouts": 5,
+          "steps": 1579,
+          "plants": 111,
+          "reasons": {
+            "DEF: Elimination": 84,
+            "ATK: Detonation": 38,
+            "ATK: Elimination": 55,
+            "DEF: Defused": 18,
+            "DEF: Time out": 5
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.465,
+          "defRate": 0.5349999999999999,
+          "atkWilson95": [
+            0.3971856415700402,
+            0.5341335312763685
+          ],
+          "timeoutRate": 0.025,
+          "averageSteps": 7.895
+        },
+        "CR": {
+          "rounds": 200,
+          "atkWins": 2,
+          "timeouts": 0,
+          "steps": 1144,
+          "plants": 4,
+          "reasons": {
+            "DEF: Elimination": 196,
+            "ATK: Elimination": 2,
+            "DEF: Defused": 2
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.01,
+          "defRate": 0.99,
+          "atkWilson95": [
+            0.0027466581335444384,
+            0.0357217617161768
+          ],
+          "timeoutRate": 0,
+          "averageSteps": 5.72
+        }
+      },
+      "spawns": {
+        "north-road": {
+          "rounds": 400,
+          "atkWins": 239,
+          "timeouts": 36,
+          "steps": 3346,
+          "plants": 282,
+          "reasons": {
+            "ATK: Detonation": 174,
+            "DEF: Defused": 44,
+            "ATK: Elimination": 65,
+            "DEF: Time out": 36,
+            "DEF: Elimination": 81
+          },
+          "attackPolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 57
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 59
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 65
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 58
+            }
+          },
+          "defensePolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 53
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 67
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 64
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 55
+            }
+          },
+          "atkRate": 0.5975,
+          "defRate": 0.40249999999999997,
+          "atkWilson95": [
+            0.5487342037489487,
+            0.6444108988558637
+          ],
+          "timeoutRate": 0.09,
+          "averageSteps": 8.365
+        },
+        "quay": {
+          "rounds": 400,
+          "atkWins": 237,
+          "timeouts": 19,
+          "steps": 3219,
+          "plants": 282,
+          "reasons": {
+            "ATK: Detonation": 181,
+            "DEF: Defused": 46,
+            "DEF: Elimination": 98,
+            "ATK: Elimination": 56,
+            "DEF: Time out": 19
+          },
+          "attackPolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 53
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 60
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 58
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 66
+            }
+          },
+          "defensePolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 60
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 63
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 55
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 59
+            }
+          },
+          "atkRate": 0.5925,
+          "defRate": 0.4075,
+          "atkWilson95": [
+            0.5436883047891221,
+            0.639551920759033
+          ],
+          "timeoutRate": 0.0475,
+          "averageSteps": 8.0475
+        },
+        "rail-yard": {
+          "rounds": 400,
+          "atkWins": 267,
+          "timeouts": 9,
+          "steps": 2818,
+          "plants": 318,
+          "reasons": {
+            "DEF: Defused": 52,
+            "ATK: Detonation": 209,
+            "DEF: Elimination": 72,
+            "ATK: Elimination": 58,
+            "DEF: Time out": 9
+          },
+          "attackPolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 72
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 60
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 65
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 70
+            }
+          },
+          "defensePolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 66
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 69
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 67
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 65
+            }
+          },
+          "atkRate": 0.6675,
+          "defRate": 0.3325,
+          "atkWilson95": [
+            0.6199313395835853,
+            0.7118820418144254
+          ],
+          "timeoutRate": 0.0225,
+          "averageSteps": 7.045
+        }
+      },
+      "uniformStats": {
+        "rounds": 1000,
+        "atkWins": 518,
+        "timeouts": 70,
+        "steps": 7949,
+        "plants": 621,
+        "reasons": {
+          "ATK: Detonation": 405,
+          "DEF: Defused": 103,
+          "ATK: Elimination": 113,
+          "DEF: Time out": 70,
+          "DEF: Elimination": 309
+        },
+        "attackPolicies": {
+          "Balanced": {
+            "rounds": 250,
+            "atkWins": 122
+          },
+          "Rush": {
+            "rounds": 250,
+            "atkWins": 132
+          },
+          "Tactical": {
+            "rounds": 250,
+            "atkWins": 136
+          },
+          "Utility-heavy": {
+            "rounds": 250,
+            "atkWins": 128
+          }
+        },
+        "defensePolicies": {
+          "Balanced": {
+            "rounds": 252,
+            "atkWins": 137
+          },
+          "Rush": {
+            "rounds": 252,
+            "atkWins": 136
+          },
+          "Tactical": {
+            "rounds": 248,
+            "atkWins": 119
+          },
+          "Utility-heavy": {
+            "rounds": 248,
+            "atkWins": 126
+          }
+        },
+        "atkRate": 0.518,
+        "defRate": 0.482,
+        "atkWilson95": [
+          0.48702069136344844,
+          0.5488415453310715
+        ],
+        "timeoutRate": 0.07,
+        "averageSteps": 7.949
+      },
+      "fullMatches": {
+        "rounds": 1139,
+        "atkWins": 598,
+        "timeouts": 65,
+        "steps": 8909,
+        "plants": 733,
+        "reasons": {
+          "ATK: Detonation": 467,
+          "DEF: Time out": 65,
+          "DEF: Defused": 136,
+          "ATK: Elimination": 131,
+          "DEF: Elimination": 340
+        },
+        "attackPolicies": {},
+        "defensePolicies": {},
+        "atkRate": 0.5250219490781387,
+        "defRate": 0.4749780509218613,
+        "atkWilson95": [
+          0.4959855848767698,
+          0.5538900995937768
+        ],
+        "timeoutRate": 0.05706760316066725,
+        "averageSteps": 7.821773485513608,
+        "matches": 200,
+        "playerWins": 95,
+        "playerWinRate": 0.475,
+        "playerWilson95": [
+          0.4069162264657108,
+          0.5440260398531525
+        ]
+      },
+      "counterplay": {
+        "S": {
+          "candidateCount": 22,
+          "selectionSeed": 274901,
+          "plan": {
+            "groups": [
+              {
+                "ops": [
+                  "r01",
+                  "r02",
+                  "r03"
+                ],
+                "path": [
+                  "north-road",
+                  "lobby",
+                  "stairs",
+                  "site"
+                ]
+              },
+              {
+                "ops": [
+                  "r04",
+                  "r05"
+                ],
+                "path": [
+                  "north-road",
+                  "lobby",
+                  "stairs",
+                  "site"
+                ]
+              }
+            ],
+            "gadgets": {
+              "r02": "site",
+              "r03": "stairs",
+              "r05": "stairs"
+            }
+          },
+          "search": {
+            "rounds": 80,
+            "atkWins": 67,
+            "timeouts": 3,
+            "steps": 637,
+            "plants": 72,
+            "reasons": {
+              "ATK: Detonation": 34,
+              "ATK: Elimination": 33,
+              "DEF: Time out": 3,
+              "DEF: Elimination": 5,
+              "DEF: Defused": 5
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.8375,
+            "defRate": 0.16249999999999998,
+            "atkWilson95": [
+              0.7415709565930229,
+              0.9025018059704963
+            ],
+            "timeoutRate": 0.0375,
+            "averageSteps": 7.9625
+          },
+          "validation": {
+            "rounds": 600,
+            "atkWins": 476,
+            "timeouts": 25,
+            "steps": 4894,
+            "plants": 513,
+            "reasons": {
+              "ATK: Detonation": 243,
+              "ATK: Elimination": 233,
+              "DEF: Elimination": 62,
+              "DEF: Defused": 37,
+              "DEF: Time out": 25
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.7933333333333333,
+            "defRate": 0.20666666666666667,
+            "atkWilson95": [
+              0.7591172954308381,
+              0.8238171733077908
+            ],
+            "timeoutRate": 0.041666666666666664,
+            "averageSteps": 8.156666666666666
+          }
+        },
+        "P": {
+          "candidateCount": 22,
+          "selectionSeed": 274901,
+          "plan": {
+            "groups": [
+              {
+                "ops": [
+                  "r01",
+                  "r02",
+                  "r03"
+                ],
+                "path": [
+                  "quay",
+                  "dock",
+                  "cargo",
+                  "site"
+                ]
+              },
+              {
+                "ops": [
+                  "r04",
+                  "r05"
+                ],
+                "path": [
+                  "rail-yard",
+                  "lockers",
+                  "sorting",
+                  "site"
+                ]
+              }
+            ],
+            "gadgets": {
+              "r02": "site",
+              "r03": "cargo",
+              "r05": "sorting"
+            }
+          },
+          "search": {
+            "rounds": 80,
+            "atkWins": 73,
+            "timeouts": 2,
+            "steps": 591,
+            "plants": 77,
+            "reasons": {
+              "ATK: Elimination": 54,
+              "DEF: Defused": 5,
+              "ATK: Detonation": 19,
+              "DEF: Time out": 2
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.9125,
+            "defRate": 0.08750000000000002,
+            "atkWilson95": [
+              0.8302320449152499,
+              0.9569679982179401
+            ],
+            "timeoutRate": 0.025,
+            "averageSteps": 7.3875
+          },
+          "validation": {
+            "rounds": 600,
+            "atkWins": 554,
+            "timeouts": 6,
+            "steps": 4248,
+            "plants": 577,
+            "reasons": {
+              "ATK: Elimination": 428,
+              "ATK: Detonation": 126,
+              "DEF: Defused": 27,
+              "DEF: Elimination": 13,
+              "DEF: Time out": 6
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.9233333333333333,
+            "defRate": 0.07666666666666666,
+            "atkWilson95": [
+              0.8992488448368539,
+              0.942031581638213
+            ],
+            "timeoutRate": 0.01,
+            "averageSteps": 7.08
+          }
+        },
+        "R": {
+          "candidateCount": 22,
+          "selectionSeed": 274901,
+          "plan": {
+            "groups": [
+              {
+                "ops": [
+                  "r01",
+                  "r02",
+                  "r03"
+                ],
+                "path": [
+                  "rail-yard",
+                  "lockers",
+                  "crew",
+                  "records",
+                  "stairs",
+                  "site"
+                ]
+              },
+              {
+                "ops": [
+                  "r04",
+                  "r05"
+                ],
+                "path": [
+                  "rail-yard",
+                  "lockers",
+                  "crew",
+                  "records",
+                  "stairs",
+                  "site"
+                ]
+              }
+            ],
+            "gadgets": {
+              "r02": "site",
+              "r03": "stairs",
+              "r05": "stairs"
+            }
+          },
+          "search": {
+            "rounds": 80,
+            "atkWins": 71,
+            "timeouts": 2,
+            "steps": 692,
+            "plants": 77,
+            "reasons": {
+              "ATK: Detonation": 35,
+              "ATK: Elimination": 36,
+              "DEF: Defused": 6,
+              "DEF: Time out": 2,
+              "DEF: Elimination": 1
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.8875,
+            "defRate": 0.11250000000000004,
+            "atkWilson95": [
+              0.7998178190762713,
+              0.9396731305336952
+            ],
+            "timeoutRate": 0.025,
+            "averageSteps": 8.65
+          },
+          "validation": {
+            "rounds": 600,
+            "atkWins": 536,
+            "timeouts": 19,
+            "steps": 5246,
+            "plants": 563,
+            "reasons": {
+              "ATK: Elimination": 273,
+              "ATK: Detonation": 263,
+              "DEF: Time out": 19,
+              "DEF: Defused": 27,
+              "DEF: Elimination": 18
+            },
+            "attackPolicies": {},
+            "defensePolicies": {},
+            "atkRate": 0.8933333333333333,
+            "defRate": 0.10666666666666669,
+            "atkWilson95": [
+              0.866083119474195,
+              0.9155790090616936
+            ],
+            "timeoutRate": 0.03166666666666667,
+            "averageSteps": 8.743333333333334
+          }
+        }
+      },
+      "checks": {
+        "pooledIntervalInside45to55": true,
+        "freshIntervalInside45to55": true,
+        "pooledTimeoutAtMost15": true,
+        "freshTimeoutAtMost15": true,
+        "counterToEachDefenseTemplate": true
+      },
+      "status": "PASS"
+    },
+    "Astra Training House": {
+      "kind": "tutorial",
+      "shape": "Compact training house",
+      "geometry": {
+        "zones": 8,
+        "doors": 11,
+        "independentApproaches": 3,
+        "shortestRoutes": {
+          "west-start": 2,
+          "east-start": 2
+        },
+        "objectiveEntrances": 3
+      },
+      "pool": {
+        "rounds": 4000,
+        "atkWins": 1866,
+        "timeouts": 73,
+        "steps": 27552,
+        "plants": 2360,
+        "reasons": {
+          "DEF: Elimination": 1566,
+          "DEF: Defused": 495,
+          "ATK: Detonation": 1370,
+          "ATK: Elimination": 496,
+          "DEF: Time out": 73
+        },
+        "attackPolicies": {
+          "Tactical": {
+            "rounds": 1017,
+            "atkWins": 444
+          },
+          "Balanced": {
+            "rounds": 978,
+            "atkWins": 534
+          },
+          "Rush": {
+            "rounds": 969,
+            "atkWins": 467
+          },
+          "Utility-heavy": {
+            "rounds": 1036,
+            "atkWins": 421
+          }
+        },
+        "defensePolicies": {
+          "Rush": {
+            "rounds": 1001,
+            "atkWins": 362
+          },
+          "Balanced": {
+            "rounds": 1011,
+            "atkWins": 481
+          },
+          "Tactical": {
+            "rounds": 988,
+            "atkWins": 546
+          },
+          "Utility-heavy": {
+            "rounds": 1000,
+            "atkWins": 477
+          }
+        },
+        "atkRate": 0.4665,
+        "defRate": 0.5335,
+        "atkWilson95": [
+          0.4510794677867114,
+          0.4819848149136988
+        ],
+        "timeoutRate": 0.01825,
+        "averageSteps": 6.888,
+        "batches": [
+          {
+            "seed": 193751,
+            "rounds": 2000,
+            "atkWins": 904,
+            "timeouts": 37,
+            "steps": 13703,
+            "plants": 1149,
+            "reasons": {
+              "DEF: Elimination": 811,
+              "DEF: Defused": 248,
+              "ATK: Detonation": 669,
+              "ATK: Elimination": 235,
+              "DEF: Time out": 37
+            },
+            "attackPolicies": {
+              "Tactical": {
+                "rounds": 529,
+                "atkWins": 220
+              },
+              "Balanced": {
+                "rounds": 471,
+                "atkWins": 256
+              },
+              "Rush": {
+                "rounds": 486,
+                "atkWins": 223
+              },
+              "Utility-heavy": {
+                "rounds": 514,
+                "atkWins": 205
+              }
+            },
+            "defensePolicies": {
+              "Rush": {
+                "rounds": 488,
+                "atkWins": 158
+              },
+              "Balanced": {
+                "rounds": 527,
+                "atkWins": 239
+              },
+              "Tactical": {
+                "rounds": 490,
+                "atkWins": 275
+              },
+              "Utility-heavy": {
+                "rounds": 495,
+                "atkWins": 232
+              }
+            },
+            "atkRate": 0.452,
+            "defRate": 0.548,
+            "atkWilson95": [
+              0.43030088679958445,
+              0.4738831497394158
+            ],
+            "timeoutRate": 0.0185,
+            "averageSteps": 6.8515
+          },
+          {
+            "seed": 9518427,
+            "rounds": 2000,
+            "atkWins": 962,
+            "timeouts": 36,
+            "steps": 13849,
+            "plants": 1211,
+            "reasons": {
+              "ATK: Elimination": 261,
+              "DEF: Elimination": 755,
+              "ATK: Detonation": 701,
+              "DEF: Defused": 247,
+              "DEF: Time out": 36
+            },
+            "attackPolicies": {
+              "Balanced": {
+                "rounds": 507,
+                "atkWins": 278
+              },
+              "Utility-heavy": {
+                "rounds": 522,
+                "atkWins": 216
+              },
+              "Tactical": {
+                "rounds": 488,
+                "atkWins": 224
+              },
+              "Rush": {
+                "rounds": 483,
+                "atkWins": 244
+              }
+            },
+            "defensePolicies": {
+              "Utility-heavy": {
+                "rounds": 505,
+                "atkWins": 245
+              },
+              "Balanced": {
+                "rounds": 484,
+                "atkWins": 242
+              },
+              "Tactical": {
+                "rounds": 498,
+                "atkWins": 271
+              },
+              "Rush": {
+                "rounds": 513,
+                "atkWins": 204
+              }
+            },
+            "atkRate": 0.481,
+            "defRate": 0.519,
+            "atkWilson95": [
+              0.45916015609633803,
+              0.5029126917003495
+            ],
+            "timeoutRate": 0.018,
+            "averageSteps": 6.9245
+          }
+        ]
+      },
+      "fresh": {
+        "rounds": 4000,
+        "atkWins": 1736,
+        "timeouts": 84,
+        "steps": 28070,
+        "plants": 2156,
+        "reasons": {
+          "DEF: Defused": 433,
+          "ATK: Detonation": 1244,
+          "ATK: Elimination": 492,
+          "DEF: Elimination": 1747,
+          "DEF: Time out": 84
+        },
+        "attackPolicies": {
+          "Balanced": {
+            "rounds": 1000,
+            "atkWins": 444
+          },
+          "Rush": {
+            "rounds": 1000,
+            "atkWins": 422
+          },
+          "Tactical": {
+            "rounds": 1000,
+            "atkWins": 441
+          },
+          "Utility-heavy": {
+            "rounds": 1000,
+            "atkWins": 429
+          }
+        },
+        "defensePolicies": {
+          "Balanced": {
+            "rounds": 1000,
+            "atkWins": 429
+          },
+          "Rush": {
+            "rounds": 1000,
+            "atkWins": 458
+          },
+          "Tactical": {
+            "rounds": 1000,
+            "atkWins": 399
+          },
+          "Utility-heavy": {
+            "rounds": 1000,
+            "atkWins": 450
+          }
+        },
+        "atkRate": 0.434,
+        "defRate": 0.5660000000000001,
+        "atkWilson95": [
+          0.41871127136526154,
+          0.4494153751489791
+        ],
+        "timeoutRate": 0.021,
+        "averageSteps": 7.0175,
+        "batches": [
+          {
+            "seed": 193751,
+            "rounds": 2000,
+            "atkWins": 871,
+            "timeouts": 38,
+            "steps": 14007,
+            "plants": 1071,
+            "reasons": {
+              "DEF: Defused": 206,
+              "ATK: Detonation": 640,
+              "ATK: Elimination": 231,
+              "DEF: Elimination": 885,
+              "DEF: Time out": 38
+            },
+            "attackPolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 212
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 221
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 227
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 211
+              }
+            },
+            "defensePolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 217
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 231
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 200
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 223
+              }
+            },
+            "atkRate": 0.4355,
+            "defRate": 0.5645,
+            "atkWilson95": [
+              0.4139141651344704,
+              0.4573331339648112
+            ],
+            "timeoutRate": 0.019,
+            "averageSteps": 7.0035
+          },
+          {
+            "seed": 9518427,
+            "rounds": 2000,
+            "atkWins": 865,
+            "timeouts": 46,
+            "steps": 14063,
+            "plants": 1085,
+            "reasons": {
+              "ATK: Elimination": 261,
+              "DEF: Defused": 227,
+              "ATK: Detonation": 604,
+              "DEF: Elimination": 862,
+              "DEF: Time out": 46
+            },
+            "attackPolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 232
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 201
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 214
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 218
+              }
+            },
+            "defensePolicies": {
+              "Balanced": {
+                "rounds": 500,
+                "atkWins": 212
+              },
+              "Rush": {
+                "rounds": 500,
+                "atkWins": 227
+              },
+              "Tactical": {
+                "rounds": 500,
+                "atkWins": 199
+              },
+              "Utility-heavy": {
+                "rounds": 500,
+                "atkWins": 227
+              }
+            },
+            "atkRate": 0.4325,
+            "defRate": 0.5675,
+            "atkWilson95": [
+              0.4109373740877533,
+              0.45432142729521574
+            ],
+            "timeoutRate": 0.023,
+            "averageSteps": 7.0315
+          }
+        ]
+      },
+      "templates": {
+        "AS": {
+          "rounds": 200,
+          "atkWins": 28,
+          "timeouts": 1,
+          "steps": 1478,
+          "plants": 46,
+          "reasons": {
+            "ATK: Detonation": 28,
+            "DEF: Elimination": 153,
+            "DEF: Defused": 18,
+            "DEF: Time out": 1
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.14,
+          "defRate": 0.86,
+          "atkWilson95": [
+            0.09866982633455634,
+            0.1948988086570756
+          ],
+          "timeoutRate": 0.005,
+          "averageSteps": 7.39
+        },
+        "AP": {
+          "rounds": 200,
+          "atkWins": 112,
+          "timeouts": 3,
+          "steps": 1598,
+          "plants": 124,
+          "reasons": {
+            "DEF: Elimination": 74,
+            "ATK: Detonation": 82,
+            "DEF: Defused": 11,
+            "ATK: Elimination": 30,
+            "DEF: Time out": 3
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.56,
+          "defRate": 0.43999999999999995,
+          "atkWilson95": [
+            0.4907167533465867,
+            0.6270218074881414
+          ],
+          "timeoutRate": 0.015,
+          "averageSteps": 7.99
+        },
+        "AR": {
+          "rounds": 200,
+          "atkWins": 145,
+          "timeouts": 7,
+          "steps": 1419,
+          "plants": 121,
+          "reasons": {
+            "ATK: Elimination": 140,
+            "DEF: Elimination": 40,
+            "DEF: Time out": 7,
+            "DEF: Defused": 8,
+            "ATK: Detonation": 5
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.725,
+          "defRate": 0.275,
+          "atkWilson95": [
+            0.6593166064233035,
+            0.7822029967069265
+          ],
+          "timeoutRate": 0.035,
+          "averageSteps": 7.095
+        },
+        "BS": {
+          "rounds": 200,
+          "atkWins": 78,
+          "timeouts": 7,
+          "steps": 1551,
+          "plants": 115,
+          "reasons": {
+            "DEF: Defused": 37,
+            "ATK: Detonation": 78,
+            "DEF: Elimination": 78,
+            "DEF: Time out": 7
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.39,
+          "defRate": 0.61,
+          "atkWilson95": [
+            0.3250834313746962,
+            0.4590625404283025
+          ],
+          "timeoutRate": 0.035,
+          "averageSteps": 7.755
+        },
+        "BP": {
+          "rounds": 200,
+          "atkWins": 179,
+          "timeouts": 5,
+          "steps": 1318,
+          "plants": 190,
+          "reasons": {
+            "ATK: Detonation": 52,
+            "ATK: Elimination": 127,
+            "DEF: Time out": 5,
+            "DEF: Defused": 11,
+            "DEF: Elimination": 5
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.895,
+          "defRate": 0.10499999999999998,
+          "atkWilson95": [
+            0.8448196800887696,
+            0.9302925120731899
+          ],
+          "timeoutRate": 0.025,
+          "averageSteps": 6.59
+        },
+        "BR": {
+          "rounds": 200,
+          "atkWins": 126,
+          "timeouts": 2,
+          "steps": 1314,
+          "plants": 108,
+          "reasons": {
+            "DEF: Elimination": 62,
+            "ATK: Elimination": 120,
+            "DEF: Defused": 10,
+            "ATK: Detonation": 6,
+            "DEF: Time out": 2
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.63,
+          "defRate": 0.37,
+          "atkWilson95": [
+            0.5612262992405018,
+            0.6938739159014088
+          ],
+          "timeoutRate": 0.01,
+          "averageSteps": 6.57
+        },
+        "CS": {
+          "rounds": 200,
+          "atkWins": 20,
+          "timeouts": 1,
+          "steps": 1459,
+          "plants": 25,
+          "reasons": {
+            "DEF: Elimination": 174,
+            "ATK: Detonation": 15,
+            "ATK: Elimination": 5,
+            "DEF: Time out": 1,
+            "DEF: Defused": 5
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.1,
+          "defRate": 0.9,
+          "atkWilson95": [
+            0.06567044866909588,
+            0.1494058124327174
+          ],
+          "timeoutRate": 0.005,
+          "averageSteps": 7.295
+        },
+        "CP": {
+          "rounds": 200,
+          "atkWins": 57,
+          "timeouts": 2,
+          "steps": 1530,
+          "plants": 65,
+          "reasons": {
+            "DEF: Elimination": 133,
+            "ATK: Elimination": 30,
+            "DEF: Defused": 8,
+            "ATK: Detonation": 27,
+            "DEF: Time out": 2
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.285,
+          "defRate": 0.7150000000000001,
+          "atkWilson95": [
+            0.22695003004617292,
+            0.3511534602960517
+          ],
+          "timeoutRate": 0.01,
+          "averageSteps": 7.65
+        },
+        "CR": {
+          "rounds": 200,
+          "atkWins": 63,
+          "timeouts": 5,
+          "steps": 1516,
+          "plants": 81,
+          "reasons": {
+            "DEF: Elimination": 116,
+            "DEF: Defused": 16,
+            "ATK: Detonation": 21,
+            "ATK: Elimination": 42,
+            "DEF: Time out": 5
+          },
+          "attackPolicies": {},
+          "defensePolicies": {},
+          "atkRate": 0.315,
+          "defRate": 0.685,
+          "atkWilson95": [
+            0.2546232099022851,
+            0.3823495608573036
+          ],
+          "timeoutRate": 0.025,
+          "averageSteps": 7.58
+        }
+      },
+      "spawns": {
+        "west-start": {
+          "rounds": 400,
+          "atkWins": 254,
+          "timeouts": 7,
+          "steps": 2750,
+          "plants": 292,
+          "reasons": {
+            "ATK: Detonation": 193,
+            "ATK: Elimination": 61,
+            "DEF: Elimination": 98,
+            "DEF: Defused": 41,
+            "DEF: Time out": 7
+          },
+          "attackPolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 68
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 63
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 66
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 57
+            }
+          },
+          "defensePolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 57
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 57
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 68
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 72
+            }
+          },
+          "atkRate": 0.635,
+          "defRate": 0.365,
+          "atkWilson95": [
+            0.5867439222120918,
+            0.680687758317648
+          ],
+          "timeoutRate": 0.0175,
+          "averageSteps": 6.875
+        },
+        "east-start": {
+          "rounds": 400,
+          "atkWins": 255,
+          "timeouts": 2,
+          "steps": 2706,
+          "plants": 289,
+          "reasons": {
+            "DEF: Elimination": 103,
+            "ATK: Elimination": 70,
+            "DEF: Defused": 40,
+            "ATK: Detonation": 185,
+            "DEF: Time out": 2
+          },
+          "attackPolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 65
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 58
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 81
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 51
+            }
+          },
+          "defensePolicies": {
+            "Balanced": {
+              "rounds": 100,
+              "atkWins": 66
+            },
+            "Rush": {
+              "rounds": 100,
+              "atkWins": 65
+            },
+            "Tactical": {
+              "rounds": 100,
+              "atkWins": 61
+            },
+            "Utility-heavy": {
+              "rounds": 100,
+              "atkWins": 63
+            }
+          },
+          "atkRate": 0.6375,
+          "defRate": 0.36250000000000004,
+          "atkWilson95": [
+            0.5892885151310687,
+            0.6830956039269998
+          ],
+          "timeoutRate": 0.005,
+          "averageSteps": 6.765
+        }
+      },
+      "uniformStats": {
+        "rounds": 1000,
+        "atkWins": 425,
+        "timeouts": 25,
+        "steps": 6977,
+        "plants": 546,
+        "reasons": {
+          "DEF: Elimination": 428,
+          "ATK: Elimination": 122,
+          "DEF: Defused": 122,
+          "ATK: Detonation": 303,
+          "DEF: Time out": 25
+        },
+        "attackPolicies": {
+          "Balanced": {
+            "rounds": 250,
+            "atkWins": 117
+          },
+          "Rush": {
+            "rounds": 250,
+            "atkWins": 99
+          },
+          "Tactical": {
+            "rounds": 250,
+            "atkWins": 103
+          },
+          "Utility-heavy": {
+            "rounds": 250,
+            "atkWins": 106
+          }
+        },
+        "defensePolicies": {
+          "Balanced": {
+            "rounds": 252,
+            "atkWins": 100
+          },
+          "Rush": {
+            "rounds": 252,
+            "atkWins": 114
+          },
+          "Tactical": {
+            "rounds": 248,
+            "atkWins": 104
+          },
+          "Utility-heavy": {
+            "rounds": 248,
+            "atkWins": 107
+          }
+        },
+        "atkRate": 0.425,
+        "defRate": 0.575,
+        "atkWilson95": [
+          0.39470520710516793,
+          0.4558688066676653
+        ],
+        "timeoutRate": 0.025,
+        "averageSteps": 6.977
+      },
+      "fullMatches": {
+        "rounds": 1174,
+        "atkWins": 536,
+        "timeouts": 20,
+        "steps": 8138,
+        "plants": 677,
+        "reasons": {
+          "ATK: Detonation": 395,
+          "DEF: Elimination": 475,
+          "DEF: Defused": 143,
+          "ATK: Elimination": 141,
+          "DEF: Time out": 20
+        },
+        "attackPolicies": {},
+        "defensePolicies": {},
+        "atkRate": 0.4565587734241908,
+        "defRate": 0.5434412265758092,
+        "atkWilson95": [
+          0.4282535707165029,
+          0.48514733800840587
+        ],
+        "timeoutRate": 0.017035775127768313,
+        "averageSteps": 6.931856899488927,
+        "matches": 200,
+        "playerWins": 95,
+        "playerWinRate": 0.475,
+        "playerWilson95": [
+          0.4069162264657108,
+          0.5440260398531525
+        ]
+      },
+      "checks": {
+        "pooledIntervalInside45to55": true,
+        "freshIntervalInside45to55": false,
+        "pooledTimeoutAtMost15": true,
+        "freshTimeoutAtMost15": true,
+        "counterToEachDefenseTemplate": true
+      },
+      "status": "TRAINING: measured, not a competitive release gate"
+    }
+  },
+  "totalAuditedRounds": 78837,
+  "competitivePass": true
+}

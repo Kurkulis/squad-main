@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astra Map Workshop — Squad Sim</title>
+<link rel="stylesheet" href="../demo/style.css">
+<link rel="stylesheet" href="../demo/plan.css">
+<link rel="stylesheet" href="workshop.css">
+</head>
+<body>
+<header class="workshop-header">
+  <div><p class="eyebrow">SQUAD SIM / ASTRA WORK</p><h1>Map workshop</h1></div>
+  <a href="BALANCE.md">Balance report ↗</a>
+</header>
+<main>
+  <p class="intro">Three tactical maps. One place to learn. Explore the layouts, compare approaches, and play a reproducible round with the existing game engine.</p>
+  <nav id="map-cards" class="map-cards" aria-label="Choose a map"></nav>
+  <section class="workspace" aria-labelledby="map-title">
+    <div class="map-heading">
+      <div><p class="eyebrow" id="map-kind"></p><h2 id="map-title"></h2><p id="map-description"></p></div>
+      <button id="export-map">Export map JSON</button>
+    </div>
+    <div id="map-facts" class="map-facts"></div>
+    <div class="map-layout">
+      <div>
+        <div class="view-controls"><label><input id="show-plans" type="checkbox"> Show both teams' plans</label><span>Open analysis view</span></div>
+        <div id="map-view" class="map-view"></div>
+      </div>
+      <aside>
+        <div class="inspector" id="inspector" aria-live="polite"></div>
+        <div class="round-controls">
+          <h3>Try a round</h3>
+          <label>Attack plan <select id="attack-plan"><option value="">AI pool</option></select></label>
+          <label>Defense setup <select id="defense-plan"><option value="">AI pool</option></select></label>
+          <label>Seed <input id="round-seed" type="number" min="0" max="4294967295" value="20261029" step="1"></label>
+          <div class="button-row"><button id="play-round" class="primary">Play round</button><button id="next-seed">Next seed</button></div>
+          <p class="hint">The default roster is identical in every map test. A single round illustrates the rules; the report measures balance over many rounds.</p>
+        </div>
+      </aside>
+    </div>
+    <div id="tutorial" hidden>
+      <h3>Foundations for future lessons</h3>
+      <p>These presets are playable examples, not a completed guided tutorial. Select a lesson to highlight its rooms and load a fixed plan.</p>
+      <div id="lesson-buttons" class="lesson-buttons"></div>
+      <div id="lesson-detail" aria-live="polite"></div>
+    </div>
+  </section>
+  <section id="round-review" aria-label="Round replay" hidden>
+    <h2>Round review</h2>
+    <p id="round-result" role="status"></p>
+    <div id="round-playback"></div>
+    <details><summary>Full event table</summary><div id="round-events"></div></details>
+  </section>
+  <footer>Current V4 rules · no installation or build required · <a href="README.md">Map pack guide</a> · <a href="../demo/index.html">Original demo</a></footer>
+</main>
+<script src="../demo/catalog.js"></script>
+<script src="assets.js"></script>
+<script src="../demo/data.js"></script>
+<script src="../demo/maps.js"></script>
+<script src="maps.js"></script>
+<script>Object.assign(MAPS2, ASTRA_MAPS);</script>
+<script src="../demo/engine.js"></script>
+<script src="../demo/visuals.js"></script>
+<script src="../demo/plan.js"></script>
+<script src="../demo/narrate.js"></script>
+<script src="../demo/playback.js"></script>
+<script src="tutorial.js"></script>
+<script src="workshop.js"></script>
+</body>
+</html>
